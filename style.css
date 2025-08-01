@@ -1,0 +1,502 @@
+
+/* Hero Section */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+.hero-section {
+  background-image: url("images/home_hero_3.webp"); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* ✅ Keeps background fixed */
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.hero-content h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: Arimo sans-serif;
+}
+
+.hero-content .highlight {
+  color: #177cc0;
+  font-size: 3.5rem;
+  font-family: Arimo sans-serif;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #eee;
+  font-family: Suisselntl;
+}
+
+/* 🔽 Responsive Design 🔽 */
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-content .highlight {
+    font-size: 2.4rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content .highlight {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-content .highlight {
+    font-size: 1.4rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* About Section */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 200vh;
+  background: #f5f5f5;
+}
+
+.scroll-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.image-box, .content-box {
+  flex: 1;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.content-box h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #223883 ;
+  font-family: Arimo sans-serif;
+}
+
+.content-box p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  color: black;
+  font-family: Suisselntl;
+}
+
+.content-box a {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  background: #177cc0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Arimo sans-serif;
+  text-decoration: none;
+}
+
+.content-box a:hover{
+  background-color: white;
+  color: #177cc0;
+  border: 1px solid #177cc0;
+}
+
+.show.animate-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.show.animate-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animate-left {
+  transform: translateX(-100px);
+}
+
+.animate-right {
+  transform: translateX(100px);
+}
+
+
+
+/* Services Section */
+
+.featured-title {
+  font-size: 3rem;
+  font-family: Arimo sans-serif;
+  color: #223883 ;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.featured-subtitle {
+  font-size: 22px;
+  font-family: Suisselntl;
+  color: #1A1A1A;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* Product Card Container */
+.card-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+/* Individual Card Styling */
+.hover-card {
+  position: relative;
+  overflow: hidden;
+  width: 30%;
+  min-width: 260px;
+  height: 400px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+}
+
+.hover-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Hover Content Inside Card */
+.hover-content {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  color: #000;
+  text-align: center;
+  padding: 20px;
+  transition: bottom 0.4s ease-in-out;
+}
+
+.hover-card:hover .hover-content {
+  bottom: 0;
+}
+
+.hover-content h3 {
+  font-size: 22px;
+  color: #223883 ;
+  margin-bottom: 10px;
+  font-family: Arimo sans-serif;
+}
+
+.hover-content p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-family: Suisselntl;
+}
+
+.hover-content button {
+  background-color: #177cc0;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: Arimo sans-serif;
+  font-size: 16px;
+}
+
+/* View All Button */
+.product-btn {
+  background-color: #177cc0;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: Arimo sans-serif;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+/* Responsive: Tablet */
+@media (max-width: 1200px) {
+  .hover-card {
+    width: 45%;
+  }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 600px) {
+  .hover-card {
+    width: 100%;
+  }
+}
+
+
+/* Why Choose Section */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #111;
+}
+
+.why-choose {
+  padding: 60px 20px;
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.why-choose h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #223883 ;
+  font-family: Arimo sans-serif;
+}
+
+.subtext {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 50px;
+  font-family: Suisselntl;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: #afdcf9;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 300px;
+  width: 100%;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.card.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card .icon {
+  font-size: 40px;
+  color: #00c4cc;
+  margin-bottom: 10px;
+}
+
+.card .number {
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: Arimo sans-serif;
+  color: #223883 ;
+}
+
+.card p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+  font-family: Suisselntl;
+}
+
+.icon i {
+  font-size: 40px;
+  color: #223883 ;
+}
+
+.arrow i {
+  font-size: 18px;
+}
+
+
+
+/* Contact Section */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #fff;
+}
+
+.sustainable-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #223883 ;
+  min-height: 60vh;
+  gap: 40px;
+}
+
+.left-content {
+  flex: 1;
+}
+
+.left-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: Arimo sans-serif;
+}
+
+.left-content p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 600px;
+  font-family: Suisselntl;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.secondary-btn {
+  padding: 14px 24px;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-family: Arimo sans-serif;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: white;
+}
+
+.secondary-btn:hover {
+  background-color: white;
+  color: #223883 ;
+}
+
+.right-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-image img {
+  width: 450px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}

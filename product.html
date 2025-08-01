@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTC</title>
+    <link rel = "icon" href = "images/NTC_logo.webp">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+<!-- Navbar -->
+<div id="navbar-container"></div>   
+
+<!-- Services Hero Section -->
+
+  <div class="hero-wrapper">
+    <img src="images/services_hero.webp" alt="Massage Chairs Banner" />
+  </div>  
+
+
+ <!-- Product Section -->
+  <!-- Tab Buttons -->
+  <div class="tab-buttons">
+    <button class="active" onclick="showProducts('massage', this)">Epoxy / Polyurethane Flooring</button>
+    <button onclick="showProducts('leg', this)">Waterproofing</button>
+  </div>
+
+  <!-- Product Display -->
+  <div id="productContainer" class="products"></div>
+
+  <!-- Image Gallery for Massage Chair -->
+  <div id="galleryContainer" class="image-gallery" style="display: none;">
+    <div class="main-image">
+      <img id="displayedImage" src="ProductImages/massage1.webp" alt="Main Massage Chair">
+    </div>
+    <div class="thumbnail-images">
+      <img src="ProductImages/massage1.webp" onclick="changeImage(this)" class="active" alt="Thumb 1">
+      <img src="ProductImages/massage2.webp" onclick="changeImage(this)" alt="Thumb 2">
+      <img src="ProductImages/massage3.webp" onclick="changeImage(this)" alt="Thumb 3">
+      <img src="ProductImages/massage8.webp" onclick="changeImage(this)" alt="Thumb 4">
+    </div>
+  </div>
+      
+ 
+<!-- Footer -->
+<div id="footer-container"></div>
+<script src="footer.js"></script>    
+<script src="product.js"></script>
+<script src="navbar.js"></script>    
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTC</title>
+    <link rel = "icon" href = "images/NTC_logo.webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="loader-section">
+
+  <style>
+
+    #loader-section {
+
+      position: fixed;
+
+      bottom: 0;
+
+      left: 0;
+
+      width: 100%;
+
+      height: 100vh;
+
+      background: #ffffff;
+
+      z-index: 9999;
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+
+      justify-content: center;
+
+      text-align: center;
+
+      padding: 40px 20px;
+
+      animation: slideUp 1.5s ease-in-out forwards;
+
+      animation-delay: 2.8s;
+
+      overflow: hidden;
+
+    }
+
+
+
+    #loader-section img {
+
+      width: 180px;
+
+      max-width: 80%;
+
+      animation: fadeInScale 1.2s ease-in-out;
+
+      margin-bottom: 25px;
+
+    }
+
+
+
+    #loader-section .intro-text {
+
+      max-width: 800px;
+
+      font-size: 1.5rem;
+
+      color: #223883 ;
+
+      font-family: Arimo sans-serif;
+
+      line-height: 1.7;
+
+      opacity: 0;
+
+      animation: fadeInText 1.5s ease-in-out forwards;
+
+      animation-delay: 1.2s;
+
+    }
+
+
+
+    @keyframes slideUp {
+
+      0% { transform: translate(0%); }
+
+      100% { transform: translate(-100%); }
+
+    }
+
+
+
+    @keyframes fadeInScale {
+
+      0% { opacity: 0; transform: scale(0.8); }
+
+      100% { opacity: 1; transform: scale(1); }
+
+    }
+
+
+
+    @keyframes fadeInText {
+
+      to { opacity: 1; }
+
+    }
+
+
+
+    @media (max-width: 768px) {
+
+      #loader-section .intro-text {
+
+        font-size: 0.95rem;
+
+      }
+
+    }
+
+  </style>
+
+
+
+  <!-- Loader Content -->
+
+  <img src="images/NTC_logo.webp" alt="Namrata Trading Co. Logo" />
+
+  <div class="intro-text">
+
+    Welcome to Namrata Trading Company,<br />
+
+    “We don’t just lay floors or seal surfaces—we create lasting foundations of trust and quality.”
+
+  </div>
+
+</section>
+
+<!-- Navbar -->
+<div id="navbar-container"></div>   
+
+<!-- Hero Section -->
+
+<div class="hero-section">
+    <div class="hero-content">
+      <h1>Building Strength.<br><span class="highlight">Delivering Confidence.</span></h1>
+      <p>
+        Experience next-level protection and performance with expert waterproofing, flooring, and structural repair services—delivered with precision, anywhere you build.
+      </p>
+    </div>
+</div>    
+
+
+<!-- About Section -->
+
+  <section class="scroll-section">
+    <div class="image-box animate-left">
+      <img src="images/home_hero_2.webp" alt="Example Image" />
+    </div>
+    <div class="content-box animate-right">
+      <h2>Namrata Trading Company</h2>
+      <p>
+        Namrata Trading Company is in to Contracting Business in construction related work. We provide effective solutions to your requirements and problems especially in Waterproofing, Industrial Epoxy/PU Flooring, Structural Repairs , Painting and other specialized areas.
+        We provide application with our dedicated teams as complete solutions for healthy and durable construction, with a wide range of products.
+      </p>
+      <a href="about.html">Learn More</a>
+    </div>
+  </section>
+
+
+
+<!-- Services Section -->
+
+  <h2 class="featured-title">Our Services</h2>
+  <p class="featured-subtitle">
+    From flooring to waterproofing — complete solutions for strong, reliable structures.
+  </p>
+
+  <div class="card-gallery" id="product-gallery">
+    <!-- Cards will be injected via JavaScript -->
+  </div>
+
+  <div style="text-align: center;">
+    <a href="product.html">
+      <button class="product-btn">View All Services</button>
+    </a>
+  </div>
+
+
+
+<!-- Why Choose Section -->
+
+  <section class="why-choose">
+    <div class="container">
+      <h2>Why Choose Us?</h2>
+      <p class="subtext">
+       We are dedicated to delivering exceptional construction solutions with a customer-first approach, ensuring your property gets the protection and enhancement it deserves.
+      </p>
+
+      <div class="card-wrapper">
+        <div class="card" data-animate>
+          <div class="icon"><i class="fas fa-file-alt"></i></div>
+          <div class="number">01</div>
+          <h3>Quality Guarantee</h3>
+          <p>
+            We use only premium materials and proven techniques to ensure long-lasting results that exceed industry standards.
+          </p>
+        </div>
+
+        <div class="card" data-animate>
+          <div class="icon"><i class="fas fa-link"></i></div>
+          <div class="number">02</div>
+          <h3>Timely Delivery</h3>
+          <p>
+            We respect your time and complete projects on schedule without compromising on quality or safety.
+          </p>
+        </div>
+
+        <div class="card" data-animate>
+          <div class="icon"><i class="fas fa-chart-line"></i></div>
+          <div class="number">03</div>
+          <h3>Safety & Durability</h3>
+          <p>
+            All our solutions are designed to provide maximum protection and withstand harsh weather conditions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Contact Section -->
+<section class="sustainable-section">
+    <div class="left-content">
+      <h1>Ready to Get Started?</h1>
+      <p>
+        Partner with Namrata Trading Company for expert waterproofing, flooring, and structural solutions.
+        We’re here to deliver quality, durability, and peace of mind—every step of the way.
+      </p>
+      <div class="buttons">
+        <a href="contact.html" class="secondary-btn">Contact Us</a>
+      </div>
+    </div>
+    <div class="right-image">
+      <img src="images/image2.webp" alt="Sustainability Image" />
+    </div>
+  </section>  
+
+    
+
+<!-- Footer -->
+<div id="footer-container"></div>
+<script src="footer.js"></script>
+<script src="script.js"></script>
+<script src="navbar.js"></script>
+</body>
+</html>

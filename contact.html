@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTC</title>
+    <link rel = "icon" href = "images/NTC_logo.webp">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Correct Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- Navbar -->
+<div id="navbar-container"></div>   
+
+  
+<!-- Contact Hero Section -->
+
+  <div class="hero-wrapper">
+    <img src="images/contact_hero.webp" alt="Massage Chairs Banner" />
+  </div>  
+
+
+
+<!-- Location Section -->
+    <section class="location-section">
+    <div class="contact-item">
+      <i class="fas fa-map-marker-alt"></i>
+      <p>Flat No. 304, Gagan Enclave, Bibwewadi Kondhwa <br/>Road, Marketyard, Pune - 411037</p>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-envelope-open-text"></i>
+      <p>ntccc70@gmail.com</p>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-phone-alt"></i>
+      <p>+91 9860612555 / +91 9890099869</p>
+    </div>
+  </section>
+
+
+
+  <!-- Contact Form -->
+   <div class="contact-wrapper">
+<h2>Get In Touch</h2>   
+<form action="https://formsubmit.co/gandas.dhanashree@gmail.com" method="POST">
+  <!-- Name and Subject -->
+  <div class="row">
+    <input type="text" name="name" placeholder="Enter your name*" required />
+    <input type="text" id="subjectInput" name="subject" placeholder="Enter your subject*" required />
+  </div>
+
+  <!-- Phone and Company -->
+  <div class="row">
+    <input type="tel" name="phone" placeholder="Enter your phone*" required />
+    <input type="text" name="company" placeholder="Enter company name*" required />
+  </div>
+
+  <!-- Product Category -->
+  <div class="row full">
+    <select name="product_category" required>
+      <option value="">Select a Service</option>
+      <option value="Fiber Laser Metal Cutting Machines">Industrial(PU/Epoxy) Flooring</option>
+      <option value="Fiber Laser Welding Machines">Waterproofing</option>
+    </select>
+  </div>
+
+  <!-- Requirements -->
+  <div class="row full">
+    <textarea rows="4" name="requirements" placeholder="Tell us about your requirements..." required></textarea>
+  </div>
+
+  <!-- Send Button -->
+  <button type="submit" class="con-btn-si">Send Inquiry</button>
+  </div>
+</form>
+
+<script>
+// Prefill subject from URL
+const params = new URLSearchParams(window.location.search);
+const subject = params.get("subject");
+if (subject) {
+  document.getElementById("subjectInput").value = decodeURIComponent(subject);
+}
+</script>
+
+
+<!-- Map Section -->
+
+ <section class="map-section">
+    <h2>Our Location</h2>
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps?q=Flat%20No.%20304,%20Gagan%20Enclave,%20Bibwewadi%20Kondhwa%20Road,%20Marketyard,%20Pune%20-%20411037&output=embed"
+        width="100%" 
+        height="400" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>  
+
+
+<!-- Footer -->
+<div id="footer-container"></div>
+<script src="footer.js"></script>  
+<script src="navbar.js"></script>
+</body>
+</html>

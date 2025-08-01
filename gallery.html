@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wedding Gallery</title>
+  <link rel="stylesheet" href="gallery.css" />
+</head>
+<body>
+<!-- Navbar -->
+<div id="navbar-container"></div>   
+
+<!-- Gallery Hero Section -->
+
+  <div class="hero-wrapper">
+    <img src="images/gallery_hero.webp" alt="Massage Chairs Banner" />
+  </div>     
+
+   <div>
+    <h1 class="gallery-title">Crafted With Precision</h1>
+    <p class="gallery-subtitle">Explore our recent work that reflects our commitment to excellence and detail.</p>
+   </div> 
+
+  <div class="gallery-container">
+    <div class="gallery-grid">
+      <img class="fade-in" src="images/gallery2.webp" alt="Wedding 2" />
+      <img class="fade-in" src="images/gallery3.webp" alt="Wedding 3" />
+      <img class="fade-in" src="images/gallery5.webp" alt="Wedding 4" />
+      <img class="fade-in" src="images/gallery4.webp" alt="Wedding 5" />
+      <img class="fade-in" src="images/gallery6.webp" alt="Wedding 6" />
+      <img class="fade-in" src="images/gallery1.webp" alt="Wedding 1" />
+    </div>
+  </div>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible'); // triggers every time
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    document.querySelectorAll('.fade-in').forEach(img => {
+      observer.observe(img);
+    });
+  </script>
+
+
+<!-- Contact Section -->
+<section class="sustainable-section">
+    <div class="left-content">
+      <h1>Ready to Get Started?</h1>
+      <p>
+        Partner with Namrata Trading Company for expert waterproofing, flooring, and structural solutions.
+        We’re here to deliver quality, durability, and peace of mind—every step of the way.
+      </p>
+      <div class="buttons">
+        <a href="contact.html" class="secondary-btn">Contact Us</a>
+      </div>
+    </div>
+    <div class="right-image">
+      <img src="images/image2.webp" alt="Sustainability Image" />
+    </div>
+  </section>  
+
+
+<!-- Footer -->
+<div id="footer-container"></div>
+<script src="footer.js"></script>  
+<script src="navbar.js"></script>
+</body>
+</html>

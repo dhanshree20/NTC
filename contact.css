@@ -1,0 +1,279 @@
+/* Contact Hero Section */
+
+* {
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    .hero-wrapper {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .hero-wrapper img {
+      width: 1300px;
+      height: 500px;
+      display: block;
+    }
+
+    /* ✅ Mobile L: 600px–767px */
+@media (max-width: 767px) and (min-width: 600px) {
+  .hero-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ✅ Mobile M: 400px–599px */
+@media (max-width: 599px) and (min-width: 400px) {
+  .hero-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ✅ Mobile S: below 400px */
+@media (max-width: 399px) {
+  .hero-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/* Location Section */
+
+.location-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 90px 20px;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  text-align: center;
+  color: black;
+}
+
+.contact-item i {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #223883 ;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 20px;
+  font-family: Suisselntl;
+}
+
+.contact-item a {
+  color: black;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* ✅ Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .location-section {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 10px;
+  }
+
+  .contact-item {
+    max-width: 100%;
+    font-size: 15px;
+  }
+
+  .contact-item i {
+    font-size: 30px;
+  }
+
+  .contact-item p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+}
+
+
+
+
+/* Contact Section */
+.contact-section {
+  background: #fff;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Card Wrapper */
+.contact-wrapper {
+  max-width: 800px;
+  width: 100%;
+  margin: 40px auto; /* ✅ Add this line */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fefaf9;
+  padding: 40px 30px;
+}
+
+
+/* Right Card */
+.contact-wrapper h2 {
+  color: #223883 ;
+  margin-bottom: 20px;
+  font-size: 3rem;
+  font-family: Arimo sans-serif;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.row.full {
+  flex-direction: column;
+}
+
+input,
+select,
+textarea {
+  flex: 1;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+}
+
+.con-btn-si {
+  background: #177cc0;
+  color: #fff;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+  font-family: "Merriweather", serif;
+}
+
+.con-btn-si:hover {
+  background-color: white;
+  color: #177cc0;
+  border: 1px solid #177cc0;
+}
+
+/* Responsive - Tablets & Mobiles */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    padding: 30px 20px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-right h2 {
+    font-size: 24px;
+  }
+
+  .con-btn-si {
+    font-size: 15px;
+  }
+}
+
+/* Responsive - Small Mobiles */
+@media (max-width: 480px) {
+  .contact-wrapper {
+    padding: 20px 15px;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .contact-right h2 {
+    font-size: 20px;
+  }
+
+  .con-btn-si {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+
+
+/* Map Section */
+
+body {
+  margin: 0;
+}
+
+.map-section {
+  padding: 40px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.map-section h2 {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  color: #223883 ;
+  font-family: Arimo sans-serif;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Responsive Styles */
+@media (max-width: 768px) {
+  .map-section h2 {
+    font-size: 28px;
+  }
+
+  .map-container iframe {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .map-section h2 {
+    font-size: 24px;
+  }
+
+  .map-container iframe {
+    height: 250px;
+  }
+}

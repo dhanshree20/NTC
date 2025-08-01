@@ -1,0 +1,261 @@
+/* About Hero Section */
+
+* {
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    .hero-wrapper {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .hero-wrapper img {
+      width: 1300px;
+      height: 500px;
+      display: block;
+    }
+
+    /* ✅ Mobile L: 600px–767px */
+@media (max-width: 767px) and (min-width: 600px) {
+  .hero-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ✅ Mobile M: 400px–599px */
+@media (max-width: 599px) and (min-width: 400px) {
+  .hero-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ✅ Mobile S: below 400px */
+@media (max-width: 399px) {
+  .hero-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/* Our Story */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+.our-story {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 10px 20px;
+  text-align: center;
+  line-height: 1.8;
+  color: #333;
+}
+
+.our-story h2 {
+  color: #223883 ;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-family: Arimo sans-serif;
+}
+
+.our-story p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  font-family: Suisselntl;
+}
+
+.our-story strong {
+  font-weight: bold;
+}
+
+
+
+/* M-V-V Section */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f3ef;
+  color: #1d1d1f;
+}
+
+.mission-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.mission-section h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #223883 ;
+  font-family: Arimo sans-serif;
+}
+
+.mission-subtitle {
+  font-size: 1.1rem;
+  color: #4b5563;
+  margin-bottom: 40px;
+  font-family: Suisselntl;
+}
+
+.animated-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.animated-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.mission-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px 20px;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  background-color: #e8f0e3;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-circle i {
+  font-size: 28px;
+  color: #223883 ;
+}
+
+
+.card h3 {
+  color: #223883 ;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-family: Arimo sans-serif;
+}
+
+.card p {
+  color: #374151;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  font-family: Suisselntl;
+}
+
+
+/* Contact Section */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #fff;
+}
+
+.sustainable-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #223883 ;
+  min-height: 60vh;
+  gap: 40px;
+}
+
+.left-content {
+  flex: 1;
+}
+
+.left-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: Arimo sans-serif;
+}
+
+.left-content p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 600px;
+  font-family: Suisselntl;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.secondary-btn {
+  padding: 14px 24px;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-family: Arimo sans-serif;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: white;
+}
+
+.secondary-btn:hover {
+  background-color: white;
+  color: #223883 ;
+}
+
+.right-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-image img {
+  width: 450px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
