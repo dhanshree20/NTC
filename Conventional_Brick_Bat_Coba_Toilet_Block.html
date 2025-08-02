@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTC</title>
+    <link rel = "icon" href = "images/NTC_logo.webp">
+    <link rel="stylesheet" href="allservices_style.css">
+</head>
+<body>
+<!-- Navbar -->
+<div id="navbar-container"></div>  
+
+    <!-- Product Section -->
+<div class="product-container">
+  <div class="image-section">
+    <img id="mainImage" src="images/All_Services_Images/Conventional_Brick_Bat_Coba_Toilet_Block.webp" alt="Massage Chair" class="product-image" />
+    
+  </div>
+
+  <div class="details-section">
+    <p class="category">Waterproofing</p>
+    <h1 class="title">Conventional Brick Bat Coba For Toilet Block</h1>
+    <p class="description">
+      Brick bat coba is a traditional waterproofing method used for toilet blocks to prevent leakage and maintain structural integrity.This method provides a reliable and economical solution for waterproofing in toilet blocks, though it may require maintenance over time.
+    </p>
+    <p class="description">
+        Common Methods : <br/> 1) Surface Preparation: Clean the base and apply a waterproofing slurry.<br/> 
+        2)Brick Bat Layering: Lay broken bricks in cement mortar at required slopes. <br/> 
+        3)Finishing: Cover with a slurry coat or screed for a smooth, waterproof finish.<br/>
+      
+    </p>
+
+
+         <!-- Enquire Now Button -->
+<a href="#" class="enquire-button" onclick="redirectToContact()">Enquire Now</a>
+  </div>
+</div>
+<script>
+  function redirectToContact() {
+    const productTitle = document.querySelector('.title').innerText;
+    const encodedTitle = encodeURIComponent(productTitle);
+    // Add #contactForm to scroll to form section after redirection
+    window.location.href = `contact.html?subject=${encodedTitle}#contactForm`;
+  }
+</script>
+
+<!-- Feature Section -->
+ <section class="features-section">
+  <div class="container">
+    <h1>Features</h1>
+    <ul class="features-list">
+      <li>Waterproofing: Effective in preventing water seepage.</li>
+      <li>Durability: Long-lasting under standard usage.</li>
+      <li>Thermal Insulation: Reduces heat transmission to lower floors.</li>
+      <li>Cost-Effective: Economical compared to modern alternatives.</li>
+    </ul>
+  </div>
+  <div class="container">
+    <h1>Applications</h1>
+    <ul class="features-list">
+      <li>Commonly used in residential and commercial toilet blocks.</li>
+      <li>Ideal for flat slab toilets requiring affordable waterproofing.</li>
+    </ul>
+  </div>
+</section> 
+
+<!-- Footer -->
+<div id="footer-container"></div>
+<script src="footer.js"></script>    
+<script src="navbar.js"></script> 
+</body>
+</html>

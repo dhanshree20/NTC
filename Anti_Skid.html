@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTC</title>
+    <link rel = "icon" href = "images/NTC_logo.webp">
+    <link rel="stylesheet" href="allservices_style.css">
+</head>
+<body>
+<!-- Navbar -->
+<div id="navbar-container"></div>  
+
+    <!-- Product Section -->
+<div class="product-container">
+  <div class="image-section">
+    <img id="mainImage" src="images/All_Services_Images/Anti_Skid.webp" alt="Massage Chair" class="product-image" />
+    
+  </div>
+
+  <div class="details-section">
+    <p class="category">Industrial(PU/Epoxy) Flooring</p>
+    <h1 class="title">Anti-Skid Flooring</h1>
+    <p class="description">
+      Anti-skid flooring is designed to enhance safety by providing slip resistance, particularly in environments prone to wet or slippery conditions. It reduces the risk of accidents and ensures compliance with safety standards.Anti-skid flooring is an essential solution for improving safety and minimizing slip-and-fall accidents in diverse settings.
+    </p>
+    <p class="description">
+        Common Materials: <br/> 1) Epoxy with Aggregate: Embedded sand or quartz for enhanced traction. <br/> 2) Rubber Flooring: Naturally slip-resistant and flexible. <br/> 3) Vinyl or PVC: Textured or coated for slip prevention. <br/> 4) Anti-Slip Mats or Coatings: Applied to existing floors for added safety.
+    </p>
+
+
+         <!-- Enquire Now Button -->
+<a href="#" class="enquire-button" onclick="redirectToContact()">Enquire Now</a>
+  </div>
+</div>
+<script>
+  function redirectToContact() {
+    const productTitle = document.querySelector('.title').innerText;
+    const encodedTitle = encodeURIComponent(productTitle);
+    // Add #contactForm to scroll to form section after redirection
+    window.location.href = `contact.html?subject=${encodedTitle}#contactForm`;
+  }
+</script>
+
+<!-- Feature Section -->
+<!-- <section class="features-section">
+  <div class="container">
+    <h1>Reflex Swing Pro Features</h1>
+    <ul class="features-list">
+      <li>Reflex Swing Pro Leg Massager has five intelligent functional program modes with in-built 30 air bags and three active sole rollers stimulating the reflex points, kneading thigh, calf very effective.</li>
+      <li>Foot massager machine have Individual air bags, foot rollers with three preset auto modes ensures extreme comfort and convienience complete leg massage.</li>
+      <li>Organic combination of Kneading ,Heat thearaphy, Foot Rollers,reflects immense massage experience.</li>
+      <li>Heat therapy for thighs and calves, initiated when upper section inclined over 110 degrees and the bracket at the bottom inclined over twenty degrees.</li>
+      <li>Low, Medium and High massage intensity pressure modes reflects customized comfort.</li>
+    </ul>
+  </div>
+</section> -->
+
+<!-- Footer -->
+<div id="footer-container"></div>
+<script src="footer.js"></script>    
+<script src="navbar.js"></script> 
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTC</title>
+    <link rel = "icon" href = "images/NTC_logo.webp">
+    <link rel="stylesheet" href="allservices_style.css">
+</head>
+<body>
+<!-- Navbar -->
+<div id="navbar-container"></div>  
+
+    <!-- Product Section -->
+<div class="product-container">
+  <div class="image-section">
+    <img id="mainImage" src="images/All_Services_Images/Protective_Wall_Coating.webp" alt="Massage Chair" class="product-image" />
+    
+  </div>
+
+  <div class="details-section">
+    <p class="category">Waterproofing</p>
+    <h1 class="title">Protective Wall Coating</h1>
+    <p class="description">
+      Protective wall coating is a method used to shield walls from environmental damage, moisture, and wear, enhancing both the durability and appearance of exterior and interior surfaces. Protective wall coatings are essential for preserving the integrity, aesthetic quality, and longevity of walls, particularly in areas exposed to challenging environmental factors.
+    </p>
+    <p class="description">
+        Common Materials: <br/> 1) Acrylic Coatings: Flexible, UV-resistant, and suitable for most exterior and interior walls.<br/> 
+        2) Polyurethane Coatings: Durable and chemical-resistant, often used in industrial settings. <br/> 
+        3)Silicone-Based Coatings: Waterproof and resistant to harsh weather, ideal for exposed surfaces.<br/>
+        4)Cementitious Coatings: Often used for waterproofing concrete walls, providing both protection and structural integrity.
+    </p>
+
+
+         <!-- Enquire Now Button -->
+<a href="#" class="enquire-button" onclick="redirectToContact()">Enquire Now</a>
+  </div>
+</div>
+<script>
+  function redirectToContact() {
+    const productTitle = document.querySelector('.title').innerText;
+    const encodedTitle = encodeURIComponent(productTitle);
+    // Add #contactForm to scroll to form section after redirection
+    window.location.href = `contact.html?subject=${encodedTitle}#contactForm`;
+  }
+</script>
+
+<!-- Feature Section -->
+ <section class="features-section">
+  <div class="container">
+    <h1>Features</h1>
+    <ul class="features-list">
+      <li>Weather Resistance: Protects walls from rain, UV rays, and temperature fluctuations.</li>
+      <li>Waterproofing: Prevents water penetration that could lead to mold, mildew, and structural damage.</li>
+      <li>Durability: Offers long-lasting protection against wear, dirt, and chemical exposure.</li>
+      <li>Aesthetic Improvement: Available in various colors and finishes, enhancing the visual appeal of surfaces.</li>
+      <li>Breathability: Allows moisture within the walls to escape while preventing external water ingress, preventing damage like peeling and bubbling.</li>
+    </ul>
+  </div>
+  <div class="container">
+    <h1>Applications</h1>
+    <ul class="features-list">
+      <li>Exterior Walls: Protects buildings from weather-related damage, especially in coastal or harsh climates.</li>
+      <li>Basements and Foundations: Shields below-ground walls from water and moisture.</li>
+      <li>Industrial Walls: Protects in factories or warehouses exposed to chemicals or high humidity.</li>
+      <li>Interior Walls: Used to protect against stains, moisture, and high-traffic wear in kitchens, bathrooms, or public spaces.</li>
+    </ul>
+  </div>
+</section> 
+
+<!-- Footer -->
+<div id="footer-container"></div>
+<script src="footer.js"></script>    
+<script src="navbar.js"></script> 
+</body>
+</html>

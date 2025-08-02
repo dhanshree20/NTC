@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Overlapping Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      justify-content: center;
+      align-items: center;
+      background: #f5f5f5;
+    }
+
+    .featured-title {
+  font-size: 3rem;
+  font-family: Arimo sans-serif;
+  color: #223883 ;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.featured-subtitle {
+  font-size: 22px;
+  font-family: Suisselntl;
+  color: #1A1A1A;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+    .container {
+      position: relative;
+      width: 900px;
+      height: 400px;
+      margin-left: 200px;
+      margin-top: 40px;
+    }
+
+    .top-row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .top-box {
+      width: 400px;
+      height: 250px;
+      background: #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .top-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .bottom-box {
+      position: absolute;
+      width: 260px;
+      height: 160px;
+      border-radius: 10px;
+      padding: 20px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .bottom-left {
+      background: rgba(0, 0, 0, 0.8);
+      top: 140px;      /* Overlap upward */
+      left: 0;
+      margin-left: 170px;
+    }
+
+    .bottom-right {
+      background: rgba(0, 0, 0, 0.8);
+      top: 140px;      /* Overlap upward */
+      right: 0;
+      margin-right: -30px;
+    }
+
+    .bottom-box h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      font-family: Arimo sans-serif;
+    }
+
+    .bottom-box p {
+      font-size: 15px;
+      color: #ccc;
+      font-family: Suisselntl;
+    }
+
+    @media screen and (max-width: 640px) {
+      .container {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+      }
+
+      .top-row,
+      .bottom-row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .bottom-box {
+        position: static;
+        margin-top: -40px;
+      }
+    }
+    .product-btn {
+  background-color: #177cc0;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: Arimo sans-serif;
+  margin-top: -50px;
+  font-size: 18px;
+}
+  </style>
+</head>
+<body>
+
+
+  <h2 class="featured-title">Our Services</h2>
+  <p class="featured-subtitle">
+    From flooring to waterproofing — complete solutions for strong, reliable structures.
+  </p>
+<div class="container">
+  <div class="top-row">
+    <!-- Top Left Image -->
+    <div class="top-box">
+      <img src="images/Polyurethane_Flooring.webp" alt="Image 1">
+    </div>
+
+    <!-- Top Right Image -->
+    <div class="top-box">
+      <img src="images/waterproofing.webp" alt="Image 2">
+    </div>
+  </div>
+
+  <!-- Bottom Left Text (Overlapping Left Image) -->
+  <div class="bottom-box bottom-left">
+    <h3>Epoxy / Polyurethane Flooring</h3>
+    <p>Epoxy and polyurethane flooring are high-performance coatings used in industrial and commercial spaces for their durability, chemical resistance, and smooth finish.</p>
+  </div>
+
+  <!-- Bottom Right Text (Overlapping Right Image) -->
+  <div class="bottom-box bottom-right">
+    <h3>Waterproofing</h3>
+    <p>Waterproofing is the process of making surfaces resistant to water penetration, protecting structures like terraces, basements, and walls from leaks and damage.</p>
+  </div>
+</div>
+  <div style="text-align: center;">
+    <a href="product.html">
+      <button class="product-btn">View All Services</button>
+    </a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTC</title>
+    <link rel = "icon" href = "images/NTC_logo.webp">
+    <link rel="stylesheet" href="allservices_style.css">
+</head>
+<body>
+<!-- Navbar -->
+<div id="navbar-container"></div>  
+
+    <!-- Product Section -->
+<div class="product-container">
+  <div class="image-section">
+    <img id="mainImage" src="images/All_Services_Images/Pharmacy_Food_Industrial_Flooring.webp" alt="Massage Chair" class="product-image" />
+    
+  </div>
+
+  <div class="details-section">
+    <p class="category">Industrial(PU/Epoxy) Flooring</p>
+    <h1 class="title">Pharmacy/Food Industrial Flooring with Covering</h1>
+    <p class="description">
+      Pharmaceutical and food industries require specialized flooring solutions to meet stringent hygiene, safety, and durability standards. These floors must be resistant to chemical exposure, microbial growth, and heavy wear due to equipment and foot traffic. These flooring solutions ensure safe and efficient operations while maintaining regulatory compliance.
+    </p>
+    <p class="description">
+        Common Materials: <br/> 1) Epoxy and Polyurethane Coatings: Durable, chemical-resistant, and customizable. <br/> 2) Vinyl and PVC: Flexible, easy to install, and economical for certain applications. <br/> 3) Anti-microbial Additives: Often integrated to inhibit microbial growth.
+    </p>
+
+         <!-- Enquire Now Button -->
+<a href="#" class="enquire-button" onclick="redirectToContact()">Enquire Now</a>
+  </div>
+</div>
+<script>
+  function redirectToContact() {
+    const productTitle = document.querySelector('.title').innerText;
+    const encodedTitle = encodeURIComponent(productTitle);
+    // Add #contactForm to scroll to form section after redirection
+    window.location.href = `contact.html?subject=${encodedTitle}#contactForm`;
+  }
+</script>
+
+<!-- Feature Section -->
+<!-- <section class="features-section">
+  <div class="container">
+    <h1>Reflex Swing Pro Features</h1>
+    <ul class="features-list">
+      <li>Reflex Swing Pro Leg Massager has five intelligent functional program modes with in-built 30 air bags and three active sole rollers stimulating the reflex points, kneading thigh, calf very effective.</li>
+      <li>Foot massager machine have Individual air bags, foot rollers with three preset auto modes ensures extreme comfort and convienience complete leg massage.</li>
+      <li>Organic combination of Kneading ,Heat thearaphy, Foot Rollers,reflects immense massage experience.</li>
+      <li>Heat therapy for thighs and calves, initiated when upper section inclined over 110 degrees and the bracket at the bottom inclined over twenty degrees.</li>
+      <li>Low, Medium and High massage intensity pressure modes reflects customized comfort.</li>
+    </ul>
+  </div>
+</section> -->
+
+<!-- Footer -->
+<div id="footer-container"></div>
+<script src="footer.js"></script>    
+<script src="navbar.js"></script> 
+</body>
+</html>

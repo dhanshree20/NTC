@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTC</title>
+    <link rel = "icon" href = "images/NTC_logo.webp">
+    <link rel="stylesheet" href="allservices_style.css">
+</head>
+<body>
+<!-- Navbar -->
+<div id="navbar-container"></div>  
+
+    <!-- Product Section -->
+<div class="product-container">
+  <div class="image-section">
+    <img id="mainImage" src="images/All_Services_Images/Bitumen_Membrane_Waterproofing.webp" alt="Massage Chair" class="product-image" />
+    
+  </div>
+
+  <div class="details-section">
+    <p class="category">Waterproofing</p>
+    <h1 class="title">Bitumen Membrane Waterproofing </h1>
+    <p class="description">
+      Bitumen membrane waterproofing is a widely used and effective method to protect structures from water damage. It involves applying bitumen-based materials in layers to form a waterproof barrier on roofs, foundations, and other surfaces. Bitumen membrane waterproofing offers a reliable, economical solution for a variety of applications, delivering durable and effective water protection.
+    </p>
+    <p class="description">
+        Common Materials : <br/> 1)Modified Bitumen: Enhanced with polymers (e.g., SBS or APP) for greater flexibility and resistance.<br/> 
+        2)Self-Adhesive Bitumen: Pre-applied adhesive layer for easy installation without heat.<br/> 
+    </p>
+
+
+         <!-- Enquire Now Button -->
+<a href="#" class="enquire-button" onclick="redirectToContact()">Enquire Now</a>
+  </div>
+</div>
+<script>
+  function redirectToContact() {
+    const productTitle = document.querySelector('.title').innerText;
+    const encodedTitle = encodeURIComponent(productTitle);
+    // Add #contactForm to scroll to form section after redirection
+    window.location.href = `contact.html?subject=${encodedTitle}#contactForm`;
+  }
+</script>
+
+<!-- Feature Section -->
+ <section class="features-section">
+  <div class="container">
+    <h1>Features</h1>
+    <ul class="features-list">
+      <li>Durability: Highly resistant to water, weather, and UV exposure.</li>
+      <li>Temperature Resistance: Performs well in both hot and cold climates.</li>
+      <li>Seamless Protection: Can be applied in overlapping layers, preventing leakage.</li>
+      <li>Cost-Effective: Affordable compared to other waterproofing methods.</li>
+      <li>Ease of Application: Available in rolls for easy installation, typically with hot or cold application methods.</li>
+    </ul>
+  </div>
+  <div class="container">
+    <h1>Applications</h1>
+    <ul class="features-list">
+      <li>Roofs: Ideal for flat or low-slope roofs, providing long-lasting protection.</li>
+      <li>Basements and Foundations: Effective in preventing moisture seepage in underground structures.</li>
+      <li>Bridges and Parking Decks: Used for waterproofing high-traffic, exposed surfaces.</li>
+    </ul>
+  </div>
+</section> 
+
+<!-- Footer -->
+<div id="footer-container"></div>
+<script src="footer.js"></script>    
+<script src="navbar.js"></script> 
+</body>
+</html>

@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Correct Font Awesome CDN -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -17,27 +20,45 @@
 
 <!-- About Hero Section -->
 
-  <div class="hero-wrapper">
-    <img src="images/about_hero.webp" alt="Massage Chairs Banner" />
-  </div>    
+  <div class="image-section">
+    <img src="images/img3.jpg" alt="Banner Image" />
+    <div class="overlay">
+      <h1>About Us</h1>
+      <p>Building Trust with Quality Solutions in Waterproofing, Flooring & Structural Repairs</p>
+    </div>
+  </div>  
 
 
-    <!-- Our Story -->
+<!-- Our Story -->
 
-     <section class="our-story">
-    <h2>Our Story</h2>
-    <p>
-Your trusted partner for high-quality waterproofing and flooring solutions. With years of expertise and a commitment to excellence, we specialize in transforming spaces with durable, innovative, and aesthetically pleasing results. From epoxy/polyurethane flooring that ensures safety and longevity in industrial and commercial spaces to advanced waterproofing techniques that protect your structures from water damage, we deliver solutions that stand the test of time. What sets us apart is our customer-first approach. We don't just provide services; we solve problems.
-    </p>
+  <div class="why-container">
+    <div class="left-section" data-aos="fade-right" >
+      <img src="images/home_hero_1.webp" alt="Fermenter & Bioreactor manufactures in India" class="main-img">
+      <img src="images/image2.webp" alt="Sushi" class="circle-img">
+    </div>
 
-    <p>
+    <div class="right-section" data-aos="fade-left">
+      <h2>Our Story</h2>
+      <p>
+        Your trusted partner for high-quality waterproofing and flooring solutions. With years of expertise and a commitment to excellence, we specialize in transforming spaces with durable, innovative, and aesthetically pleasing results. From epoxy/polyurethane flooring that ensures safety and longevity in industrial and commercial spaces to advanced waterproofing techniques that protect your structures from water damage, we deliver solutions that stand the test of time. What sets us apart is our customer-first approach. We don't just provide services; we solve problems.
+      </p>
+      <p>
       Every project we take on is meticulously planned and executed, ensuring precision, durability, and long-term satisfaction. Whether you're looking for seamless antiskid flooring, chemical-resistant surfaces, or watertight protection for basements and terraces, our team of experts uses only the best materials and cutting-edge techniques to meet your unique needs.
-    </p>
+      </p>
+    </div>
+  </div>
 
-    <p>
-     Our mission is simple: to enhance the functionality and safety of your spaces while adding value to your investments. We don’t just create floors or waterproof your property; we create confidence and peace of mind. Let us help you bring your vision to life with solutions designed to exceed your expectations.
-    </p>
-  </section>
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animation duration in ms
+    once: true      // animation runs only once
+  });
+</script>
+
+
+
 
     <!-- M-V-V Section -->
 

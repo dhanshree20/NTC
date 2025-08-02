@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTC</title>
+    <link rel = "icon" href = "images/NTC_logo.webp">
+    <link rel="stylesheet" href="allservices_style.css">
+</head>
+<body>
+<!-- Navbar -->
+<div id="navbar-container"></div>  
+
+    <!-- Product Section -->
+<div class="product-container">
+  <div class="image-section">
+    <img id="mainImage" src="images/All_Services_Images/Toilet_Block_PU_Grouting.webp" alt="Massage Chair" class="product-image" />
+    
+  </div>
+
+  <div class="details-section">
+    <p class="category">Waterproofing</p>
+    <h1 class="title">Toilet Block PU Grouting</h1>
+    <p class="description">
+      Toilet block PU (Polyurethane) grouting is a specialized waterproofing technique used to seal and repair cracks or leaks in toilet blocks, ensuring that water does not seep into structural elements or cause damage to the building.PU grouting in toilet blocks ensures a reliable and long-lasting solution to leaks, preventing water damage and maintaining hygiene in high-moisture areas.
+    </p>
+    <p class="description">
+        Common Materials: <br/> 1) Polyurethane Resin: Expands upon injection, filling cracks and voids, and forms a flexible waterproof seal. <br/> 
+        2) Cement-Based Grout: Often used in conjunction with PU for larger cracks, providing a rigid structure alongside flexibility. <br/> 
+    </p>
+
+
+         <!-- Enquire Now Button -->
+<a href="#" class="enquire-button" onclick="redirectToContact()">Enquire Now</a>
+  </div>
+</div>
+<script>
+  function redirectToContact() {
+    const productTitle = document.querySelector('.title').innerText;
+    const encodedTitle = encodeURIComponent(productTitle);
+    // Add #contactForm to scroll to form section after redirection
+    window.location.href = `contact.html?subject=${encodedTitle}#contactForm`;
+  }
+</script>
+
+<!-- Feature Section -->
+ <section class="features-section">
+  <div class="container">
+    <h1>Features</h1>
+    <ul class="features-list">
+      <li>Waterproofing: Prevents water infiltration, ensuring that toilet blocks remain dry and free of leaks.</li>
+      <li>Flexibility: Polyurethane grout expands and contracts with the movement of the structure, preventing cracks from reappearing.</li>
+      <li>Durability: Highly resistant to water, chemicals, and wear, making it ideal for high-moisture environments.</li>
+      <li>Quick Application: Fast-curing process that minimizes downtime, allowing the toilet block to be used sooner.</li>
+      <li>Seamless Coverage: Creates a continuous, joint-free seal over cracks, joints, and gaps.</li>
+    </ul>
+  </div>
+  <div class="container">
+    <h1>Applications</h1>
+    <ul class="features-list">
+      <li>Toilet Blocks: Used to waterproof floors, walls, and joints in toilet blocks, ensuring a dry and leak-free environment.</li>
+      <li>Restrooms in Public or Commercial Buildings: Protects the building structure from water damage in high-use areas.</li>
+      <li>Industrial Toilets: Ideal for factory or warehouse toilet blocks, where heavy use and moisture are common.</li>
+    </ul>
+  </div>
+</section> 
+
+<!-- Footer -->
+<div id="footer-container"></div>
+<script src="footer.js"></script>    
+<script src="navbar.js"></script> 
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTC</title>
+    <link rel = "icon" href = "images/NTC_logo.webp">
+    <link rel="stylesheet" href="allservices_style.css">
+</head>
+<body>
+<!-- Navbar -->
+<div id="navbar-container"></div>  
+
+    <!-- Product Section -->
+<div class="product-container">
+  <div class="image-section">
+    <img id="mainImage" src="images/All_Services_Images/Expansion_Joint_Treatment.webp" alt="Massage Chair" class="product-image" />
+    
+  </div>
+
+  <div class="details-section">
+    <p class="category">Waterproofing</p>
+    <h1 class="title">Expansion Joint Treatment</h1>
+    <p class="description">
+      “Expansion joint treatment” in floor proofing refers to the process of sealing gaps between concrete slabs in a floor with a flexible sealant, allowing the floor to expand and contract with temperature changes without cracking, typically using specialized materials like polysulfide, silicone, or polyurethane sealants, to prevent water infiltration and maintain the structural integrity of the floor. 
+    </p>
+    <p class="description">
+        Material Used: <br/> 1) Sealants: Polysulfide, silicone, polyurethane sealants are commonly used due to their flexibility and adhesion properties. <br/> 
+        2) Joint fillers: In some cases, a backing material like foam or a pre-formed joint strip might be used to fill the gap before applying sealant.<br/> 
+      
+    </p>
+
+
+         <!-- Enquire Now Button -->
+<a href="#" class="enquire-button" onclick="redirectToContact()">Enquire Now</a>
+  </div>
+</div>
+<script>
+  function redirectToContact() {
+    const productTitle = document.querySelector('.title').innerText;
+    const encodedTitle = encodeURIComponent(productTitle);
+    // Add #contactForm to scroll to form section after redirection
+    window.location.href = `contact.html?subject=${encodedTitle}#contactForm`;
+  }
+</script>
+
+<!-- Feature Section -->
+ <section class="features-section">
+  <div class="container">
+    <h1>Process</h1>
+    <ul class="features-list">
+      <li>Cleaning and preparation: Thoroughly clean the joint area, removing debris and dust. </li>
+      <li>Joint tooling: Create a V-shaped groove in the joint to ensure proper sealant adhesion. </li>
+      <li>Primer application: Apply a primer specific to the sealant to enhance bonding. </li>
+      <li>Sealant application: Apply the sealant evenly into the joint, ensuring full contact and proper depth. </li>
+      <li>Tooling and finishing: Smooth out the sealant with a tooling tool, removing any excess material.</li>
+    </ul>
+  </div>
+  <div class="container">
+    <h1>Why is expansion joint treatment important?</h1>
+    <ul class="features-list">
+      <li>Structural integrity: Maintaining expansion joints helps to preserve the overall structural integrity of the floor. </li>
+      <li>Prevents cracks: By allowing movement, expansion joints prevent cracks from forming in the floor due to temperature changes. </li>
+      <li>Waterproofing: Proper sealing of the joint prevents water from seeping into the subfloor, causing damage. </li>
+    </ul>
+  </div>
+</section> 
+
+<!-- Footer -->
+<div id="footer-container"></div>
+<script src="footer.js"></script>    
+<script src="navbar.js"></script> 
+</body>
+</html>

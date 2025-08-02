@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTC</title>
+    <link rel = "icon" href = "images/NTC_logo.webp">
+    <link rel="stylesheet" href="allservices_style.css">
+</head>
+<body>
+<!-- Navbar -->
+<div id="navbar-container"></div>  
+
+    <!-- Product Section -->
+<div class="product-container">
+  <div class="image-section">
+    <img id="mainImage" src="images/All_Services_Images/UGWT_OHWT_Treatment.webp" alt="Massage Chair" class="product-image" />
+    
+  </div>
+
+  <div class="details-section">
+    <p class="category">Waterproofing</p>
+    <h1 class="title">UGWT/OHWT Treatment</h1>
+    <p class="description">
+      UGWT (Underground Water Tank) and OHWT (Overhead Water Tank) treatments in waterproofing are essential processes to protect water storage tanks from leakage, corrosion, and contamination, ensuring the quality and safety of stored water.UGWT and OHWT treatment in waterproofing are crucial for the safety, longevity, and hygiene of water storage systems, ensuring that they provide clean and uncontaminated water.
+    </p>
+    <p class="description">
+        Common Methods: <br/> 1) Cementitious Coatings: Applied to the tank’s interior and exterior surfaces to create a waterproof barrier. <br/> 
+        2) Polyurethane and Epoxy Coatings: Used for both waterproofing and providing a protective finish, especially in exposed tanks. <br/> 
+        3) Bituminous Membranes: Applied to the outer walls of underground tanks for added protection against external water pressure. <br/>
+        4) Polymer-Based Sealants: Injected or applied to cracks or joints to ensure a watertight seal.
+    </p>
+
+
+         <!-- Enquire Now Button -->
+<a href="#" class="enquire-button" onclick="redirectToContact()">Enquire Now</a>
+  </div>
+</div>
+<script>
+  function redirectToContact() {
+    const productTitle = document.querySelector('.title').innerText;
+    const encodedTitle = encodeURIComponent(productTitle);
+    // Add #contactForm to scroll to form section after redirection
+    window.location.href = `contact.html?subject=${encodedTitle}#contactForm`;
+  }
+</script>
+
+<!-- Feature Section -->
+ <section class="features-section">
+  <div class="container">
+    <h1>Features</h1>
+    <ul class="features-list">
+      <li>Waterproofing: Prevents water leakage, ensuring tanks remain sealed and functional.</li>
+      <li>Corrosion Resistance: Protects tanks from rust and damage, especially in metal tanks.</li>
+      <li>Hygiene Maintenance: Prevents contamination of water by sealing cracks or joints.</li>
+      <li>Durability: Long-lasting protection against water-related damage.</li>
+      <li>Thermal Insulation: Reduces heat transfer, maintaining water temperature and minimizing algae growth.</li>
+    </ul>
+  </div>
+  <div class="container">
+    <h1>Applications</h1>
+    <ul class="features-list">
+      <li>Underground Water Tanks: Prevents water seepage and contamination from the surrounding soil.</li>
+      <li>Overhead Water Tanks: Protects against leaks, preserving water quality and reducing the risk of structural damage.</li>
+      <li>Municipal or Industrial Tanks: Used in large-scale water storage systems to ensure safe and efficient water supply.</li>
+    </ul>
+  </div>
+</section> 
+
+<!-- Footer -->
+<div id="footer-container"></div>
+<script src="footer.js"></script>    
+<script src="navbar.js"></script> 
+</body>
+</html>

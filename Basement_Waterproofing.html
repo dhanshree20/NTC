@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTC</title>
+    <link rel = "icon" href = "images/NTC_logo.webp">
+    <link rel="stylesheet" href="allservices_style.css">
+</head>
+<body>
+<!-- Navbar -->
+<div id="navbar-container"></div>  
+
+    <!-- Product Section -->
+<div class="product-container">
+  <div class="image-section">
+    <img id="mainImage" src="images/All_Services_Images/Basement_Waterproofing.webp" alt="Massage Chair" class="product-image" />
+    
+  </div>
+
+  <div class="details-section">
+    <p class="category">Waterproofing</p>
+    <h1 class="title">Basement Waterproofing</h1>
+    <p class="description">
+      Basement waterproofing is a critical process to protect below-ground spaces from water ingress, preventing damage to structural components, mold growth, and other moisture-related issues.Basement waterproofing is essential to protect the foundation, prevent water damage, and create a safe, dry space that can be fully utilized.
+    </p>
+    <p class="description">
+        Common Methods: <br/> 1) Interior Drainage Systems: Includes sump pumps and drains installed to channel water out of the basement.<br/> 
+        2) Exterior Waterproofing: Applies a waterproof membrane on the exterior walls of the basement to prevent water from entering.<br/> 
+        3)Cementitious Coatings: Chemical-based coatings are applied to walls and floors to create a moisture-resistant surface.<br/>
+        4)Polyurethane Injection: Used to fill cracks in the foundation to prevent water infiltration. <br/>
+        5)Vapor Barriers: Applied over floors and walls to prevent moisture transmission through the materials.
+      
+    </p>
+
+
+         <!-- Enquire Now Button -->
+<a href="#" class="enquire-button" onclick="redirectToContact()">Enquire Now</a>
+  </div>
+</div>
+<script>
+  function redirectToContact() {
+    const productTitle = document.querySelector('.title').innerText;
+    const encodedTitle = encodeURIComponent(productTitle);
+    // Add #contactForm to scroll to form section after redirection
+    window.location.href = `contact.html?subject=${encodedTitle}#contactForm`;
+  }
+</script>
+
+<!-- Feature Section -->
+ <section class="features-section">
+  <div class="container">
+    <h1>Features</h1>
+    <ul class="features-list">
+      <li>Moisture Protection: Prevents water from seeping into the basement, keeping the space dry.</li>
+      <li>Mold and Mildew Prevention: Reduces the risk of mold growth caused by dampness.</li>
+      <li>Structural Integrity: Protects the foundation and walls from water damage, which can weaken the structure over time.</li>
+      <li>Energy Efficiency: Helps maintain stable temperature conditions by preventing moisture-related heat loss.</li>
+      <li>Increased Usable Space: Waterproofing allows the basement to be used for living, storage, or office space without the worry of water damage.</li>
+    </ul>
+  </div>
+  <div class="container">
+    <h1>Applications</h1>
+    <ul class="features-list">
+      <li>Residential Basements: To create a dry, usable living or storage space.</li>
+      <li>Commercial Basements: Protects business storage areas, parking garages, or office spaces from water damage.</li>
+      <li>Industrial Basements: Ensures moisture control in warehouses and manufacturing facilities located below ground.</li>
+    </ul>
+  </div>
+</section> 
+
+<!-- Footer -->
+<div id="footer-container"></div>
+<script src="footer.js"></script>    
+<script src="navbar.js"></script> 
+</body>
+</html>

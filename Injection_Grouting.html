@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTC</title>
+    <link rel = "icon" href = "images/NTC_logo.webp">
+    <link rel="stylesheet" href="allservices_style.css">
+</head>
+<body>
+<!-- Navbar -->
+<div id="navbar-container"></div>  
+
+    <!-- Product Section -->
+<div class="product-container">
+  <div class="image-section">
+    <img id="mainImage" src="images/All_Services_Images/Injection_Grouting.webp" alt="Massage Chair" class="product-image" />
+    
+  </div>
+
+  <div class="details-section">
+    <p class="category">Waterproofing</p>
+    <h1 class="title">Injection Grouting</h1>
+    <p class="description">
+      Injection grouting is a method used in waterproofing to seal cracks and voids in concrete or masonry structures, preventing water ingress. It involves injecting a grout mixture into these openings to create a watertight seal.Injection grouting is an effective and efficient solution for repairing water leaks in structures, providing long-term waterproofing with minimal disturbance.
+    </p>
+    <p class="description">
+        Common Materials: <br/> 1) Polyurethane Resins: Expands upon injection, filling cracks and voids, and forming a flexible waterproof seal.<br/> 
+        2) Cementitious Grouts: Used for sealing larger cracks or voids in concrete structures, providing a rigid seal. <br/> 
+        3)Epoxy Grouts: Strong, durable, and resistant to chemicals, ideal for industrial applications.<br/>
+      
+    </p>
+
+
+         <!-- Enquire Now Button -->
+<a href="#" class="enquire-button" onclick="redirectToContact()">Enquire Now</a>
+  </div>
+</div>
+<script>
+  function redirectToContact() {
+    const productTitle = document.querySelector('.title').innerText;
+    const encodedTitle = encodeURIComponent(productTitle);
+    // Add #contactForm to scroll to form section after redirection
+    window.location.href = `contact.html?subject=${encodedTitle}#contactForm`;
+  }
+</script>
+
+<!-- Feature Section -->
+ <section class="features-section">
+  <div class="container">
+    <h1>Features</h1>
+    <ul class="features-list">
+      <li>Crack Sealing: Effectively seals cracks in walls, floors, and foundations to prevent water from penetrating.</li>
+      <li>Penetration Ability: The grout material penetrates deeply into cracks, providing thorough coverage.</li>
+      <li>Durability: Long-lasting protection against water ingress and further deterioration of the structure.</li>
+      <li>Cost-Effective: A less invasive and affordable method compared to large-scale surface treatments.</li>
+      <li>Quick Application: Can be applied in situ with minimal disruption to the structure or environment.</li>
+    </ul>
+  </div>
+  <div class="container">
+    <h1>Applications</h1>
+    <ul class="features-list">
+      <li>Basements and Foundations: Prevents water from entering through cracks in below-ground structures.</li>
+      <li>Tunnels and Subways: Seals cracks in underground structures exposed to high groundwater pressure.</li>
+      <li>Swimming Pools: Seals leaking areas in pools to maintain water levels.</li>
+      <li>Concrete Structures: Used to repair and prevent water infiltration in large concrete constructions, including bridges and dams.</li>
+    </ul>
+  </div>
+</section> 
+
+<!-- Footer -->
+<div id="footer-container"></div>
+<script src="footer.js"></script>    
+<script src="navbar.js"></script> 
+</body>
+</html>

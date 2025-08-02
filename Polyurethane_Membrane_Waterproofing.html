@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTC</title>
+    <link rel = "icon" href = "images/NTC_logo.webp">
+    <link rel="stylesheet" href="allservices_style.css">
+</head>
+<body>
+<!-- Navbar -->
+<div id="navbar-container"></div>  
+
+    <!-- Product Section -->
+<div class="product-container">
+  <div class="image-section">
+    <img id="mainImage" src="images/All_Services_Images/Polyurethane_Membrane_Waterproofing.webp" alt="Massage Chair" class="product-image" />
+    
+  </div>
+
+  <div class="details-section">
+    <p class="category">Waterproofing</p>
+    <h1 class="title">Polyurethane Membrane Waterproofing</h1>
+    <p class="description">
+      Polyurethane membrane waterproofing is a highly effective and flexible solution used to protect surfaces from water ingress, providing long-lasting waterproofing for both new and old structures. Polyurethane membrane waterproofing is a premium solution for a wide range of applications, offering flexible, durable, and seamless protection against water ingress.
+    </p>
+    <p class="description">
+        Common Materials : <br/> 1)Pure Polyurethane: Excellent performance in high-traffic and exposed areas.<br/> 
+        2)Modified Polyurethane: Improved chemical resistance, ideal for industrial applications.<br/> 
+    </p>
+
+
+         <!-- Enquire Now Button -->
+<a href="#" class="enquire-button" onclick="redirectToContact()">Enquire Now</a>
+  </div>
+</div>
+<script>
+  function redirectToContact() {
+    const productTitle = document.querySelector('.title').innerText;
+    const encodedTitle = encodeURIComponent(productTitle);
+    // Add #contactForm to scroll to form section after redirection
+    window.location.href = `contact.html?subject=${encodedTitle}#contactForm`;
+  }
+</script>
+
+<!-- Feature Section -->
+ <section class="features-section">
+  <div class="container">
+    <h1>Features</h1>
+    <ul class="features-list">
+      <li>Flexibility: Expands and contracts with the building, accommodating movement without cracking.</li>
+      <li>Durability: Resistant to UV rays, extreme temperatures, and weather conditions.</li>
+      <li>Seamless Application: Forms a continuous, joint-free membrane, eliminating leak points.</li>
+      <li>High Adhesion: Strong bonding to various surfaces like concrete, metal, and wood.</li>
+      <li>Chemical Resistance: Protects against chemicals, oils, and other harsh substances.</li>
+    </ul>
+  </div>
+  <div class="container">
+    <h1>Applications</h1>
+    <ul class="features-list">
+      <li>Roofs and Terraces: Ideal for flat roofs, terraces, and balconies.</li>
+      <li>Basements and Foundations: Prevents moisture penetration in underground spaces.</li>
+      <li>Swimming Pools: Provides waterproofing and flexibility in pool areas.</li>
+      <li>Parking Areas: Protects parking decks and ramps from water damage.</li>
+    </ul>
+  </div>
+</section> 
+
+<!-- Footer -->
+<div id="footer-container"></div>
+<script src="footer.js"></script>    
+<script src="navbar.js"></script> 
+</body>
+</html>

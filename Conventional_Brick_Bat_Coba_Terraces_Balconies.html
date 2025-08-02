@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTC</title>
+    <link rel = "icon" href = "images/NTC_logo.webp">
+    <link rel="stylesheet" href="allservices_style.css">
+</head>
+<body>
+<!-- Navbar -->
+<div id="navbar-container"></div>  
+
+    <!-- Product Section -->
+<div class="product-container">
+  <div class="image-section">
+    <img id="mainImage" src="images/All_Services_Images/Conventional_Brick_Bat_Coba_Terraces_Balconies.webp" alt="Massage Chair" class="product-image" />
+    
+  </div>
+
+  <div class="details-section">
+    <p class="category">Waterproofing</p>
+    <h1 class="title">Conventional Brick Bat Coba For Terraces and Balconies</h1>
+    <p class="description">
+      Brick bat coba is a traditional waterproofing technique used on terraces and balconies to prevent water leakage, ensuring the longevity and safety of the structure. Brick bat coba remains a traditional and practical solution for terrace and balcony waterproofing, although it requires periodic maintenance for optimal performance.
+    </p>
+    <p class="description">
+        Common Methods : <br/> 1) Surface Preparation: Clean and smoothen the terrace or balcony surface.<br/> 
+        2)Brick Bat Layering: Spread broken bricks in a cement mortar mix to create a sloped layer for drainage. <br/> 
+        3)Finishing: Apply a screed or slurry coat to smoothen the surface and enhance waterproofing.<br/>
+      
+    </p>
+
+
+         <!-- Enquire Now Button -->
+<a href="#" class="enquire-button" onclick="redirectToContact()">Enquire Now</a>
+  </div>
+</div>
+<script>
+  function redirectToContact() {
+    const productTitle = document.querySelector('.title').innerText;
+    const encodedTitle = encodeURIComponent(productTitle);
+    // Add #contactForm to scroll to form section after redirection
+    window.location.href = `contact.html?subject=${encodedTitle}#contactForm`;
+  }
+</script>
+
+<!-- Feature Section -->
+ <section class="features-section">
+  <div class="container">
+    <h1>Features</h1>
+    <ul class="features-list">
+      <li>Waterproofing: Prevents water seepage and dampness.</li>
+      <li>Durability: Provides long-lasting protection, even under harsh weather conditions.</li>
+      <li>Thermal Insulation: Helps in maintaining a stable temperature inside the building.</li>
+      <li>Cost-Effective: An affordable solution compared to modern waterproofing techniques.</li>
+    </ul>
+  </div>
+  <div class="container">
+    <h1>Applications</h1>
+    <ul class="features-list">
+      <li>Common in residential buildings for terrace and balcony waterproofing.</li>
+      <li>Ideal for flat rooftops or terraces that require cost-effective, reliable protection.</li>
+    </ul>
+  </div>
+</section> 
+
+<!-- Footer -->
+<div id="footer-container"></div>
+<script src="footer.js"></script>    
+<script src="navbar.js"></script> 
+</body>
+</html>

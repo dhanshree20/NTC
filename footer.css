@@ -1,3 +1,53 @@
+/* Floating WhatsApp Button */
+.whatsapp-float-button {
+  position: fixed;
+  bottom: 10px;
+  right: 22px;
+  z-index: 999;
+}
+
+.whatsapp-float-button a {
+  background-color: #25d366;
+  color: white;
+  font-size: 28px;
+  padding: 12px 16px;
+  border-radius: 100%;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease;
+}
+
+.whatsapp-float-button a:hover {
+  background-color: #1ebd5b;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-float-button {
+    right: 12px;
+    bottom: 10px; /* Slightly higher for thumb reach and scroll button spacing */
+  }
+
+  .whatsapp-float-button a {
+    font-size: 24px;
+    padding: 12px 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .whatsapp-float-button {
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .whatsapp-float-button a {
+    font-size: 22px;
+    padding: 8px 11px;
+  }
+}
+
+
+
+
 body {
   margin: 0;
   padding: 0;

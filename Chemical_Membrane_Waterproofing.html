@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTC</title>
+    <link rel = "icon" href = "images/NTC_logo.webp">
+    <link rel="stylesheet" href="allservices_style.css">
+</head>
+<body>
+<!-- Navbar -->
+<div id="navbar-container"></div>  
+
+    <!-- Product Section -->
+<div class="product-container">
+  <div class="image-section">
+    <img id="mainImage" src="images/All_Services_Images/Chemical_Membrane_Waterproofing.webp" alt="Massage Chair" class="product-image" />
+    
+  </div>
+
+  <div class="details-section">
+    <p class="category">Waterproofing</p>
+    <h1 class="title">Chemical Membrane Waterproofing</h1>
+    <p class="description">
+      Chemical membrane waterproofing is a modern, advanced technique used to protect buildings from water ingress by applying a liquid chemical membrane that forms a seamless, waterproof barrier.Chemical membrane waterproofing is an efficient and durable solution for preventing water damage in various building areas, offering a flexible, seamless protective layer.
+    </p>
+    <p class="description">
+        Common Materials : <br/> 1)Polyurethane: Offers excellent adhesion, flexibility, and UV resistance.<br/> 
+        2)Bitumen-Based Coatings: Provides effective water protection, especially in large areas.<br/> 
+        3)Cementitious Coatings: A mix of chemicals that cures to form a waterproof barrier.<br/>
+        4)Acrylic Coatings: UV-resistant and ideal for external applications.
+    </p>
+
+
+         <!-- Enquire Now Button -->
+<a href="#" class="enquire-button" onclick="redirectToContact()">Enquire Now</a>
+  </div>
+</div>
+<script>
+  function redirectToContact() {
+    const productTitle = document.querySelector('.title').innerText;
+    const encodedTitle = encodeURIComponent(productTitle);
+    // Add #contactForm to scroll to form section after redirection
+    window.location.href = `contact.html?subject=${encodedTitle}#contactForm`;
+  }
+</script>
+
+<!-- Feature Section -->
+ <section class="features-section">
+  <div class="container">
+    <h1>Features</h1>
+    <ul class="features-list">
+      <li>Seamless Application: No joints or gaps, ensuring complete waterproofing.</li>
+      <li>Flexibility: Expands and contracts with the structure, preventing cracks.</li>
+      <li>Durability: Long-lasting protection against water, UV rays, and weather elements.</li>
+      <li>Quick Application: Can be applied quickly and efficiently, reducing downtime.</li>
+      <li>Environmentally Friendly: Many chemical membranes are low-VOC (volatile organic compounds) and non-toxic.</li>
+    </ul>
+  </div>
+  <div class="container">
+    <h1>Applications</h1>
+    <ul class="features-list">
+      <li>Terraces and Roofs: Prevents water penetration in flat or sloped roofs.</li>
+      <li>Foundations and Basements: Protects against moisture and groundwater seepage.</li>
+      <li>Walls and Swimming Pools: Shields structures from water damage and moisture buildup.</li>
+    </ul>
+  </div>
+</section> 
+
+<!-- Footer -->
+<div id="footer-container"></div>
+<script src="footer.js"></script>    
+<script src="navbar.js"></script> 
+</body>
+</html>

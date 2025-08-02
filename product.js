@@ -1,90 +1,108 @@
  const products = {
       massage: [
         {
-          image: "ProductImages/Kings_Elite_MassageChair/img1.webp",
+          image: "images/All_Services_Images/Mechanical_Engineering_Industrial_Flooring.webp",
           subtitle: "Industrial(PU/Epoxy) Flooring",
           title: "Mechanical/Engineering Industrial Flooring",
-          link: "Kings_Elite_Massage_Chair.html"
+          link: "Mechanical_Engineering_Industrial_Flooring.html"
         },
         {
-          image: "ProductImages/Dream_Relax_FullBodyMassageChair/img1.webp",
+          image: "images/All_Services_Images/Pharmacy_Food_Industrial_Flooring.webp",
           subtitle: "Industrial(PU/Epoxy) Flooring",
           title: "Pharmacy/Food Industrial Flooring with Covering",
-          link: "Dream_Relax_FullBody.html"
+          link: "Pharmacy_Food_Industrial_Flooring.html"
         },
         {
-          image: "ProductImages/Legacy_MassageChair/img1.webp",
+          image: "images/All_Services_Images/Polyurethane_Base_Chemical_Resistant.webp",
           subtitle: "Industrial(PU/Epoxy) Flooring",
           title: "Polyurethane Base Chemical Resistant Flooring",
-          link: "Legacy_Massage_Chair.html"
+          link: "Polyurethane_Base_Chemical_Resistant.html"
         },
         {
-          image: "ProductImages/Highland_MassageChair/img1.webp",
+          image: "images/All_Services_Images/Anti_Static.webp",
           subtitle: "Industrial(PU/Epoxy) Flooring",
           title: "Anti-Static(ESD) Flooring",
-          link: "Highland_Massage_Chair.html"
+          link: "Anti_Static.html"
         },
         {
-          image: "ProductImages/Imperial_MassageChair/img1.webp",
+          image: "images/All_Services_Images/Anti_Skid.webp",
           subtitle: "Industrial(PU/Epoxy) Flooring",
           title: "Anti-Skid Flooring",
-          link: "Imperial_Massage_Chair.html"
+          link: "Anti_Skid.html"
         },
         {
-          image: "ProductImages/Maestro_FullBodyMassageChair/img1.webp",
+          image: "images/All_Services_Images/Car_Parking_Anti-Skid.webp",
           subtitle: "Industrial(PU/Epoxy) Flooring",
           title: "Car Parking Anti-Skid Flooring",
-          link: "Maestro_Full_Body.html"
+          link: "Car_Parking_Anti-Skid.html"
         },
       ],
       leg: [
         {
-          image: "ProductImages/Reflex_Swing_ProLegMassager/img1.webp",
+          image: "images/All_Services_Images/Conventional_Brick_Bat_Coba_Terraces_Balconies.webp",
           subtitle: "Waterproofing",
-          title: "Conventional Brick Bat Coba",
-          link: "Reflex_Swing_ProLegMassager.html"
+          title: "Conventional Brick Bat Coba For Terraces and Balconies",
+          link: "Conventional_Brick_Bat_Coba_Terraces_Balconies.html"
         },
         {
-          image: "ProductImages/Reflex_Swing_U_ComfortFootMassager/img1.webp",
+          image: "images/All_Services_Images/Conventional_Brick_Bat_Coba_Toilet_Block.webp",
           subtitle: "Waterproofing",
-          title: "Membrane Waterproofing ",
-          link: "Reflex_Swing_U_ComfortFootMassager.html"
+          title: "Conventional Brick Bat Coba For Toilet Block",
+          link: "Conventional_Brick_Bat_Coba_Toilet_Block.html"
         },
         {
-          image: "ProductImages/Leg_And_FootMassager/img1.webp",
+          image: "images/All_Services_Images/Bitumen_Membrane_Waterproofing.webp",
+          subtitle: "Waterproofing",
+          title: "Bitumen Membrane Waterproofing ",
+          link: "Bitumen_Membrane_Waterproofing.html"
+        },
+        {
+          image: "images/All_Services_Images/Polyurethane_Membrane_Waterproofing.webp",
+          subtitle: "Waterproofing",
+          title: "Polyurethane Membrane Waterproofing",
+          link: "Polyurethane_Membrane_Waterproofing.html"
+        },
+        {
+          image: "images/All_Services_Images/Chemical_Membrane_Waterproofing.webp",
+          subtitle: "Waterproofing",
+          title: "Chemical Membrane Waterproofing ",
+          link: "Chemical_Membrane_Waterproofing.html"
+        },
+        {
+          image: "images/All_Services_Images/Expansion_Joint_Treatment.webp",
           subtitle: "Waterproofing",
           title: "Expansion Joint Treatment",
-          link: "Leg_And_FootMassager.html"
+          link: "Expansion_Joint_Treatment.html"
         },
         {
-          image: "ProductImages/Leg_And_FootMassager/img1.webp",
+          image: "images/All_Services_Images/Basement_Waterproofing.webp",
           subtitle: "Waterproofing",
           title: "Basement Waterproofing",
-          link: "Leg_And_FootMassager.html"
+          link: "Basement_Waterproofing.html"
         },
         {
-          image: "ProductImages/Leg_And_FootMassager/img1.webp",
+          image: "images/All_Services_Images/Injection_Grouting.webp",
           subtitle: "Waterproofing",
           title: "Injection Grouting",
-          link: "Leg_And_FootMassager.html"
+          link: "Injection_Grouting.html"
         },
         {
-          image: "ProductImages/Leg_And_FootMassager/img1.webp",
+          image: "images/All_Services_Images/Protective_Wall_Coating.webp",
           subtitle: "Waterproofing",
           title: "Protective Wall Coating",
-          link: "Leg_And_FootMassager.html"
+          link: "Protective_Wall_Coating.html"
         },
         {
-          image: "ProductImages/Leg_And_FootMassager/img1.webp",
+          image: "images/All_Services_Images/UGWT_OHWT_Treatment.webp",
           subtitle: "Waterproofing",
           title: "UGWT/OHWT Treatment",
-          link: "Leg_And_FootMassager.html"
+          link: "UGWT_OHWT_Treatment.html"
         },
         {
-          image: "ProductImages/Leg_And_FootMassager/img1.webp",
+          image: "images/All_Services_Images/Toilet_Block_PU_Grouting.webp",
           subtitle: "Waterproofing",
           title: "Toilet Block PU Grouting",
-          link: "Leg_And_FootMassager.html"
+          link: "Toilet_Block_PU_Grouting.html"
         }
       ],
     };
@@ -120,3 +138,29 @@ function showProducts(category, element) {
         .find(btn => btn.textContent.toLowerCase().includes(category));
       showProducts(category, tabButton);
     };
+
+
+
+
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const section = params.get("section");
+
+    if (section === "epoxy") {
+      const epoxyBtn = document.getElementById("epoxyTab");
+      if (epoxyBtn) {
+        epoxyBtn.click();
+        epoxyBtn.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+
+    if (section === "waterproofing") {
+      const waterproofBtn = document.getElementById("waterproofingTab");
+      if (waterproofBtn) {
+        waterproofBtn.click();
+        waterproofBtn.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  });
+
