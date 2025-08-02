@@ -22,12 +22,14 @@ const data = [
   {
     image: 'images/Polyurethane_Flooring.webp',
     title: 'Epoxy / Polyurethane Flooring',
-    description: 'Epoxy and polyurethane flooring are high-performance coatings used in industrial and commercial spaces for their durability, chemical resistance, and smooth finish.'
+    description: 'Epoxy and polyurethane flooring are high-performance coatings used in industrial and commercial spaces for their durability, chemical resistance, and smooth finish.',
+    category: 'massage'
   },
   {
     image: 'images/waterproofing.webp',
     title: 'Waterproofing',
-    description: 'Waterproofing is the process of making surfaces resistant to water penetration, protecting structures like terraces, basements, and walls from leaks and damage.'
+    description: 'Waterproofing is the process of making surfaces resistant to water penetration, protecting structures like terraces, basements, and walls from leaks and damage.',
+    category: 'leg'
   },
 
 ];
@@ -38,21 +40,19 @@ data.forEach(item => {
   const card = document.createElement('div');
   card.className = 'hover-card';
 
-  // Encode category name in URL to pass it to product.html
-  const encodedCategory = encodeURIComponent(item.title);
-
   card.innerHTML = `
     <img src="${item.image}" alt="${item.title}">
     <div class="hover-content">
       <h3>${item.title}</h3>
       <p>${item.description}</p>
-      <a href="product.html?category=${encodedCategory}"><button>Learn More</button></a>
+      <a href="product.html?category=${item.category}">
+        <button>Learn More</button>
+      </a>
     </div>
   `;
 
   gallery.appendChild(card);
 });
-
 
 // About Section
 

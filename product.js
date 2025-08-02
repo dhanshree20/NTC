@@ -142,25 +142,22 @@ function showProducts(category, element) {
 
 
 
+window.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
+  const category = params.get("category") || "massage";
 
-  window.addEventListener("DOMContentLoaded", () => {
-    const params = new URLSearchParams(window.location.search);
-    const section = params.get("section");
-
-    if (section === "epoxy") {
-      const epoxyBtn = document.getElementById("epoxyTab");
-      if (epoxyBtn) {
-        epoxyBtn.click();
-        epoxyBtn.scrollIntoView({ behavior: "smooth" });
-      }
+  if (category === "massage") {
+    const epoxyBtn = document.getElementById("epoxyTab");
+    if (epoxyBtn) {
+      epoxyBtn.click();
+      epoxyBtn.scrollIntoView({ behavior: "smooth" });
     }
-
-    if (section === "waterproofing") {
-      const waterproofBtn = document.getElementById("waterproofingTab");
-      if (waterproofBtn) {
-        waterproofBtn.click();
-        waterproofBtn.scrollIntoView({ behavior: "smooth" });
-      }
+  } else if (category === "leg") {
+    const waterproofBtn = document.getElementById("waterproofingTab");
+    if (waterproofBtn) {
+      waterproofBtn.click();
+      waterproofBtn.scrollIntoView({ behavior: "smooth" });
     }
-  });
+  }
+});
 
