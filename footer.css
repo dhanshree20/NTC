@@ -3,7 +3,7 @@
   position: fixed;
   bottom: 10px;
   right: 22px;
-  z-index: 999;
+  z-index: 9999;
 }
 
 .whatsapp-float-button a {
@@ -21,29 +21,6 @@
   background-color: #1ebd5b;
 }
 
-@media (max-width: 768px) {
-  .whatsapp-float-button {
-    right: 12px;
-    bottom: 10px; /* Slightly higher for thumb reach and scroll button spacing */
-  }
-
-  .whatsapp-float-button a {
-    font-size: 24px;
-    padding: 12px 13px;
-  }
-}
-
-@media (max-width: 480px) {
-  .whatsapp-float-button {
-    right: 10px;
-    bottom: 10px;
-  }
-
-  .whatsapp-float-button a {
-    font-size: 22px;
-    padding: 8px 11px;
-  }
-}
 
 
 
@@ -131,4 +108,81 @@ html {
 .footer-bottom p {
   text-align: center;
   font-size: 16px;
+}
+
+/* Responsive Breakpoints */
+
+/* Medium Devices (Tablets) */
+@media (max-width: 1024px) {
+  .footer-container {
+    padding: 40px 40px;
+  }
+}
+
+/* Small Devices (Mobiles - L & M) */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start; /* changed from center */
+    padding: 30px 20px;
+  }
+
+  .footer-box {
+    margin: 15px 0;
+    text-align: left; /* changed from center */
+  }
+
+  .footer-box h2, .footer-box h3 {
+    font-size: 18px;
+  }
+
+  .footer-box p,
+  .footer-box ul li a {
+    font-size: 15px;
+  }
+
+  .social-icons {
+    justify-content: flex-start; /* optional: align icons to left */
+  }
+
+  .whatsapp-float-button {
+    right: 15px;
+    bottom: 15px;
+  }
+
+  .whatsapp-float-button a {
+    font-size: 24px;
+    padding: 10px 13px;
+  }
+}
+
+/* Extra Small Devices (Mobiles - S) */
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 25px 15px;
+  }
+
+  .footer-box {
+    margin: 10px 0;
+  }
+
+  .footer-box h2, .footer-box h3 {
+    font-size: 16px;
+  }
+
+  .footer-box p,
+  .footer-box ul li a {
+    font-size: 14px;
+  }
+
+  .whatsapp-float-button a {
+    font-size: 20px;
+    padding: 8px 11px;
+  }
+}
+
+@media (max-width: 768px) {
+  body, html {
+    overflow-x: hidden !important;
+  }
 }

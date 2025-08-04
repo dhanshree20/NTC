@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.nav-bar {
+  background-color: #223883;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo-with-text {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+  color: white;
+}
+
+.company-logo {
+  height: 80px;
+  margin-right: 15px;
+  padding-top: 10px;
+}
+
+.company-title {
+  font-size: 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 12px;
+  font-size: 18px;
+}
+
+/* Dropdown styles */
+.dropdown, .sub-dropdown, .sub-dropdown-item {
+  position: relative;
+}
+
+.dropdown-content, .sub-dropdown-content, .sub-sub-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  z-index: 5;
+  color: black;
+  border: 1px solid #ccc;
+}
+
+.dropdown-content a, .sub-dropdown-content a, .sub-sub-dropdown-content a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}
+
+.dropdown:hover .dropdown-content,
+.sub-dropdown:hover .sub-dropdown-content,
+.sub-dropdown-item:hover .sub-sub-dropdown-content {
+  display: block;
+}
+
+.sub-dropdown-content,
+.sub-sub-dropdown-content {
+  left: 100%;
+  top: 0;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Close icon */
+.close-icon {
+  display: none;
+  text-align: right;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .logo-with-text {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 80%;
+    max-width: 300px;
+    background-color: #223883;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    z-index: 999;
+    transition: left 0.3s ease;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links a {
+    padding: 15px 20px;
+    font-size: 18px;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .close-icon {
+    display: block;
+  }
+
+  .nav-bar.menu-open .logo-with-text {
+    display: none;
+  }
+
+  /* Remove hover behaviors on mobile */
+  .dropdown-content,
+  .sub-dropdown-content,
+  .sub-sub-dropdown-content {
+    position: static;
+    border: none;
+    box-shadow: none;
+  }
+
+  .dropdown:hover .dropdown-content,
+  .sub-dropdown:hover .sub-dropdown-content,
+  .sub-dropdown-item:hover .sub-sub-dropdown-content {
+    display: none;
+  }
+
+  .dropdown > a i,
+  .sub-dropdown > a i {
+    display: none;
+  }
+
+  .company-title {
+    font-size: 16px;
+  }
+}

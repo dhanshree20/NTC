@@ -114,6 +114,7 @@ body, html {
 
 
 /* About Section */
+
 * {
   margin: 0;
   padding: 0;
@@ -198,6 +199,63 @@ body {
   transform: translateX(100px);
 }
 
+/* ✅ Responsive Breakpoints */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .content-box h2 {
+    font-size: 2.4rem;
+  }
+
+  .content-box p {
+    font-size: 1.1rem;
+  }
+
+  .content-box a {
+    font-size: 1rem;
+  }
+
+  .scroll-section {
+    flex-direction: column;
+    padding: 60px 20px;
+    gap: 30px;
+  }
+}
+
+/* Mobile L & M */
+@media (max-width: 768px) {
+  .content-box h2 {
+    font-size: 2rem;
+  }
+
+  .content-box p {
+    font-size: 1rem;
+  }
+
+  .content-box a {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile S */
+@media (max-width: 480px) {
+  .content-box h2 {
+    font-size: 1.6rem;
+  }
+
+  .content-box p {
+    font-size: 0.95rem;
+  }
+
+  .content-box a {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .scroll-section {
+    padding: 40px 10px;
+  }
+}
 
 
 /* Services Section */

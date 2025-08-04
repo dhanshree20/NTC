@@ -125,6 +125,7 @@
 
 
 /* Contact Section */
+
 .contact-section {
   background: #fff;
   padding: 40px 20px;
@@ -202,49 +203,48 @@ textarea {
   border: 1px solid #177cc0;
 }
 
-/* Responsive - Tablets & Mobiles */
-@media (max-width: 768px) {
-  .contact-wrapper {
-    padding: 30px 20px;
+  /* Tablet and Below */
+  @media (max-width: 768px) {
+    .contact-wrapper {
+      padding: 30px 20px;
+    }
+
+    .row {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .contact-wrapper h2 {
+      font-size: 2rem;
+    }
+
+    .con-btn-si {
+      font-size: 15px;
+    }
   }
 
-  .row {
-    flex-direction: column;
-    gap: 10px;
-  }
+  /* Small Mobile Devices */
+  @media (max-width: 480px) {
+    .contact-wrapper {
+      padding: 20px 15px;
+    }
 
-  .contact-right h2 {
-    font-size: 24px;
-  }
+    input,
+    select,
+    textarea {
+      font-size: 13px;
+      padding: 10px;
+    }
 
-  .con-btn-si {
-    font-size: 15px;
-  }
-}
+    .contact-wrapper h2 {
+      font-size: 1.6rem;
+    }
 
-/* Responsive - Small Mobiles */
-@media (max-width: 480px) {
-  .contact-wrapper {
-    padding: 20px 15px;
+    .con-btn-si {
+      font-size: 14px;
+      padding: 12px;
+    }
   }
-
-  input,
-  select,
-  textarea {
-    font-size: 13px;
-    padding: 10px;
-  }
-
-  .contact-right h2 {
-    font-size: 20px;
-  }
-
-  .con-btn-si {
-    font-size: 14px;
-    padding: 12px;
-  }
-}
-
 
 
 /* Map Section */

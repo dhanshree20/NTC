@@ -215,9 +215,54 @@
 }
 
 
-  @media (max-width: 400px) {
-    .tab-buttons button {
-      font-size: 14px;
-      padding: 8px 16px;
-    }
+/* ---------------- Media Queries ---------------- */
+@media (max-width: 1024px) {
+  .product-card {
+    width: 220px;
   }
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .tab-buttons {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .tab-buttons button {
+    flex: 1 1 100%;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .product-card {
+    width: 90%;
+  }
+
+  .thumbnail-images img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .image-gallery .main-image img {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .tab-buttons button {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .thumbnail-images img {
+    width: 50px;
+    height: 50px;
+  }
+}

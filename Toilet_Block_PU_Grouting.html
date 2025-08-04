@@ -6,10 +6,97 @@
     <title>NTC</title>
     <link rel = "icon" href = "images/NTC_logo.webp">
     <link rel="stylesheet" href="allservices_style.css">
+    <link rel="stylesheet" href="Hamburger.css" />
 </head>
 <body>
 <!-- Navbar -->
-<div id="navbar-container"></div>  
+<!-- <div id="navbar-container"></div>   -->
+
+<header>
+  <div class="nav-bar">
+    <div class="logo-with-text">
+      <a href="index.html"><img src="images/NTC_logo.webp" alt="NTC Logo" class="company-logo" /></a>
+      <span class="company-title">Namrata Trading Company</span>
+    </div>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Side Menu -->
+    <nav class="nav-links" id="navLinks">
+      <div class="close-icon" id="closeMenu">
+        <i class="fas fa-times"></i>
+      </div>
+
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="product.html">Services <i class="fas fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <div class="sub-dropdown">
+            <a href="product.html?category=massage">Industrial(PU/Epoxy) Flooring <i class="fas fa-angle-right"></i></a>
+            <div class="sub-dropdown-content">
+              <a href="Mechanical_Engineering_Industrial_Flooring.html">Mechanical/Engineering Industrial Flooring</a>
+              <a href="Pharmacy_Food_Industrial_Flooring.html">Pharmacy/Food Industrial Flooring</a>
+              <a href="Polyurethane_Base_Chemical_Resistant.html">Polyurethane Base Chemical Resistant Flooring</a>
+              <a href="Anti_Static.html">Anti-Static(ESD) Flooring</a>
+              <a href="Anti_Skid.html">Anti-Skid Flooring</a>
+              <a href="Car_Parking_Anti-Skid.html">Car Parking Anti-Skid Flooring</a>
+            </div>
+          </div>
+          <div class="sub-dropdown">
+            <a href="product.html?category=leg">Waterproofing <i class="fas fa-angle-right"></i></a>
+            <div class="sub-dropdown-content">
+              <div class="sub-dropdown-item">
+                <a href="#">Conventional Brick Bat Coba <i class="fas fa-angle-right"></i></a>
+                <div class="sub-sub-dropdown-content">
+                  <a href="Conventional_Brick_Bat_Coba_Toilet_Block.html">Toilet Block</a>
+                  <a href="Conventional_Brick_Bat_Coba_Terraces_Balconies.html">Terraces Balconies</a>
+                </div>
+              </div>
+              <div class="sub-dropdown-item">
+                <a href="#">Membrane Waterproofing <i class="fas fa-angle-right"></i></a>
+                <div class="sub-sub-dropdown-content">
+                  <a href="Chemical_Membrane_Waterproofing.html">Chemical Membrane</a>
+                  <a href="Polyurethane_Membrane_Waterproofing.html">Polyurethane Membrane</a>
+                  <a href="Bitumen_Membrane_Waterproofing.html">Bitumen Membrane</a>
+                </div>
+              </div>
+              <a href="Expansion_Joint_Treatment.html">Expansion Joint Treatment</a>
+              <a href="Basement_Waterproofing.html">Basement Waterproofing</a>
+              <a href="Injection_Grouting.html">Injection Grouting</a>
+              <a href="Protective_Wall_Coating.html">Protective Wall Coating</a>
+              <a href="UGWT_OHWT_Treatment.html">UGWT/OHWT Treatment</a>
+              <a href="Toilet_Block_PU_Grouting.html">Toilet Block PU Grouting</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="about.html">About</a>
+      <a href="result.html">Result</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const closeMenu = document.getElementById("closeMenu");
+  const navLinks = document.getElementById("navLinks");
+  const navBar = document.querySelector(".nav-bar");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.add("active");
+    navBar.classList.add("menu-open");
+  });
+
+  closeMenu.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+    navBar.classList.remove("menu-open");
+  });
+</script>
 
     <!-- Product Section -->
 <div class="product-container">

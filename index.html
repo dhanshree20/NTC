@@ -1,164 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NTC</title>
-    <link rel = "icon" href = "images/NTC_logo.webp">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NTC</title>
+  <link rel="icon" href="images/NTC_logo.webp">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Hamburger.css" />
 </head>
+
 <body>
 
-<section id="loader-section">
+  <script>
+    // Mobile check
+    if (window.innerWidth > 768) {
+      document.write(`
+      <section id="loader-section">
+        <style>
+          #loader-section {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: #ffffff;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+            animation: slideUp 1.5s ease-in-out forwards;
+            animation-delay: 2.8s;
+            overflow: hidden;
+          }
 
-  <style>
+          #loader-section img {
+            width: 180px;
+            max-width: 80%;
+            animation: fadeInScale 1.2s ease-in-out;
+            margin-bottom: 25px;
+          }
 
-    #loader-section {
+          #loader-section .intro-text {
+            max-width: 800px;
+            font-size: 1.5rem;
+            color: #223883;
+            font-family: Arimo, sans-serif;
+            line-height: 1.7;
+            opacity: 0;
+            animation: fadeInText 1.5s ease-in-out forwards;
+            animation-delay: 1.2s;
+          }
 
-      position: fixed;
+          @keyframes slideUp {
+            0% { transform: translate(0%); }
+            100% { transform: translate(-100%); }
+          }
 
-      bottom: 0;
+          @keyframes fadeInScale {
+            0% { opacity: 0; transform: scale(0.8); }
+            100% { opacity: 1; transform: scale(1); }
+          }
 
-      left: 0;
+          @keyframes fadeInText {
+            to { opacity: 1; }
+          }
 
-      width: 100%;
+          @media (max-width: 768px) {
+            #loader-section .intro-text {
+              font-size: 0.95rem;
+            }
+          }
+        </style>
 
-      height: 100vh;
-
-      background: #ffffff;
-
-      z-index: 9999;
-
-      display: flex;
-
-      flex-direction: column;
-
-      align-items: center;
-
-      justify-content: center;
-
-      text-align: center;
-
-      padding: 40px 20px;
-
-      animation: slideUp 1.5s ease-in-out forwards;
-
-      animation-delay: 2.8s;
-
-      overflow: hidden;
-
+        <img src="images/NTC_logo.webp" alt="Namrata Trading Co. Logo" />
+        <div class="intro-text">
+          Welcome to Namrata Trading Company,<br />
+          “We don’t just lay floors or seal surfaces—we create lasting foundations of trust and quality.”
+        </div>
+      </section>
+    `);
     }
+  </script>
 
 
+  <!-- Navbar -->
+  <!-- <div id="navbar-container"></div> -->
 
-    #loader-section img {
+<header>
+  <div class="nav-bar">
+    <div class="logo-with-text">
+      <a href="index.html"><img src="images/NTC_logo.webp" alt="NTC Logo" class="company-logo" /></a>
+      <span class="company-title">Namrata Trading Company</span>
+    </div>
 
-      width: 180px;
+    <!-- Hamburger Icon -->
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
 
-      max-width: 80%;
+    <!-- Side Menu -->
+    <nav class="nav-links" id="navLinks">
+      <div class="close-icon" id="closeMenu">
+        <i class="fas fa-times"></i>
+      </div>
 
-      animation: fadeInScale 1.2s ease-in-out;
-
-      margin-bottom: 25px;
-
-    }
-
-
-
-    #loader-section .intro-text {
-
-      max-width: 800px;
-
-      font-size: 1.5rem;
-
-      color: #223883 ;
-
-      font-family: Arimo sans-serif;
-
-      line-height: 1.7;
-
-      opacity: 0;
-
-      animation: fadeInText 1.5s ease-in-out forwards;
-
-      animation-delay: 1.2s;
-
-    }
-
-
-
-    @keyframes slideUp {
-
-      0% { transform: translate(0%); }
-
-      100% { transform: translate(-100%); }
-
-    }
-
-
-
-    @keyframes fadeInScale {
-
-      0% { opacity: 0; transform: scale(0.8); }
-
-      100% { opacity: 1; transform: scale(1); }
-
-    }
-
-
-
-    @keyframes fadeInText {
-
-      to { opacity: 1; }
-
-    }
-
-
-
-    @media (max-width: 768px) {
-
-      #loader-section .intro-text {
-
-        font-size: 0.95rem;
-
-      }
-
-    }
-
-  </style>
-
-
-
-  <!-- Loader Content -->
-
-  <img src="images/NTC_logo.webp" alt="Namrata Trading Co. Logo" />
-
-  <div class="intro-text">
-
-    Welcome to Namrata Trading Company,<br />
-
-    “We don’t just lay floors or seal surfaces—we create lasting foundations of trust and quality.”
-
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="product.html">Services <i class="fas fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <div class="sub-dropdown">
+            <a href="product.html?category=massage">Industrial(PU/Epoxy) Flooring <i class="fas fa-angle-right"></i></a>
+            <div class="sub-dropdown-content">
+              <a href="Mechanical_Engineering_Industrial_Flooring.html">Mechanical/Engineering Industrial Flooring</a>
+              <a href="Pharmacy_Food_Industrial_Flooring.html">Pharmacy/Food Industrial Flooring</a>
+              <a href="Polyurethane_Base_Chemical_Resistant.html">Polyurethane Base Chemical Resistant Flooring</a>
+              <a href="Anti_Static.html">Anti-Static(ESD) Flooring</a>
+              <a href="Anti_Skid.html">Anti-Skid Flooring</a>
+              <a href="Car_Parking_Anti-Skid.html">Car Parking Anti-Skid Flooring</a>
+            </div>
+          </div>
+          <div class="sub-dropdown">
+            <a href="product.html?category=leg">Waterproofing <i class="fas fa-angle-right"></i></a>
+            <div class="sub-dropdown-content">
+              <div class="sub-dropdown-item">
+                <a href="#">Conventional Brick Bat Coba <i class="fas fa-angle-right"></i></a>
+                <div class="sub-sub-dropdown-content">
+                  <a href="Conventional_Brick_Bat_Coba_Toilet_Block.html">Toilet Block</a>
+                  <a href="Conventional_Brick_Bat_Coba_Terraces_Balconies.html">Terraces Balconies</a>
+                </div>
+              </div>
+              <div class="sub-dropdown-item">
+                <a href="#">Membrane Waterproofing <i class="fas fa-angle-right"></i></a>
+                <div class="sub-sub-dropdown-content">
+                  <a href="Chemical_Membrane_Waterproofing.html">Chemical Membrane</a>
+                  <a href="Polyurethane_Membrane_Waterproofing.html">Polyurethane Membrane</a>
+                  <a href="Bitumen_Membrane_Waterproofing.html">Bitumen Membrane</a>
+                </div>
+              </div>
+              <a href="Expansion_Joint_Treatment.html">Expansion Joint Treatment</a>
+              <a href="Basement_Waterproofing.html">Basement Waterproofing</a>
+              <a href="Injection_Grouting.html">Injection Grouting</a>
+              <a href="Protective_Wall_Coating.html">Protective Wall Coating</a>
+              <a href="UGWT_OHWT_Treatment.html">UGWT/OHWT Treatment</a>
+              <a href="Toilet_Block_PU_Grouting.html">Toilet Block PU Grouting</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="about.html">About</a>
+      <a href="result.html">Result</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
   </div>
+</header>
 
-</section>
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const closeMenu = document.getElementById("closeMenu");
+  const navLinks = document.getElementById("navLinks");
+  const navBar = document.querySelector(".nav-bar");
 
-<!-- Navbar -->
-<div id="navbar-container"></div>   
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.add("active");
+    navBar.classList.add("menu-open");
+  });
 
-<!-- Hero Section -->
+  closeMenu.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+    navBar.classList.remove("menu-open");
+  });
+</script>
 
-<div class="hero-section">
+
+
+
+
+
+
+  <!-- Hero Section -->
+
+  <div class="hero-section">
     <div class="hero-content">
       <h1>Building Strength.<br><span class="highlight">Delivering Confidence.</span></h1>
       <p>
-        Experience next-level protection and performance with expert waterproofing, flooring, and structural repair services—delivered with precision, anywhere you build.
+        Experience next-level protection and performance with expert waterproofing, flooring, and structural repair
+        services—delivered with precision, anywhere you build.
       </p>
     </div>
-</div>    
+  </div>
 
 
-<!-- About Section -->
+  <!-- About Section -->
 
   <section class="scroll-section">
     <div class="image-box animate-left">
@@ -167,8 +204,11 @@
     <div class="content-box animate-right">
       <h2>Namrata Trading Company</h2>
       <p>
-        Namrata Trading Company is in to Contracting Business in construction related work. We provide effective solutions to your requirements and problems especially in Waterproofing, Industrial Epoxy/PU Flooring, Structural Repairs , Painting and other specialized areas.
-        We provide application with our dedicated teams as complete solutions for healthy and durable construction, with a wide range of products.
+        Namrata Trading Company is in to Contracting Business in construction related work. We provide effective
+        solutions to your requirements and problems especially in Waterproofing, Industrial Epoxy/PU Flooring,
+        Structural Repairs , Painting and other specialized areas.
+        We provide application with our dedicated teams as complete solutions for healthy and durable construction, with
+        a wide range of products.
       </p>
       <a href="about.html">Learn More</a>
     </div>
@@ -176,7 +216,7 @@
 
 
 
-<!-- Services Section -->
+  <!-- Services Section -->
 
   <h2 class="featured-title">Our Services</h2>
   <p class="featured-subtitle">
@@ -194,20 +234,14 @@
   </div>
 
 
-
-
-  
-
-
-
-
-<!-- Why Choose Section -->
+  <!-- Why Choose Section -->
 
   <section class="why-choose">
     <div class="container">
       <h2>Why Choose Us?</h2>
       <p class="subtext">
-       We are dedicated to delivering exceptional construction solutions with a customer-first approach, ensuring your property gets the protection and enhancement it deserves.
+        We are dedicated to delivering exceptional construction solutions with a customer-first approach, ensuring your
+        property gets the protection and enhancement it deserves.
       </p>
 
       <div class="card-wrapper">
@@ -216,7 +250,8 @@
           <div class="number">01</div>
           <h3>Quality Guarantee</h3>
           <p>
-            We use only premium materials and proven techniques to ensure long-lasting results that exceed industry standards.
+            We use only premium materials and proven techniques to ensure long-lasting results that exceed industry
+            standards.
           </p>
         </div>
 
@@ -242,8 +277,8 @@
   </section>
 
 
-<!-- Contact Section -->
-<section class="sustainable-section">
+  <!-- Contact Section -->
+  <section class="sustainable-section">
     <div class="left-content">
       <h1>Ready to Get Started?</h1>
       <p>
@@ -257,14 +292,15 @@
     <div class="right-image">
       <img src="images/image2.webp" alt="Sustainability Image" />
     </div>
-  </section>  
+  </section>
 
-    
 
-<!-- Footer -->
-<div id="footer-container"></div>
-<script src="footer.js"></script>
-<script src="script.js"></script>
-<script src="navbar.js"></script>
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+  <script src="footer.js"></script>
+  <script src="script.js"></script>
+  <script src="navbar.js"></script>
 </body>
+
 </html>
