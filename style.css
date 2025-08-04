@@ -309,17 +309,72 @@ body {
   font-size: 18px;
 }
 
-/* Responsive: Tablet */
+/* ✅ Responsive Breakpoints */
+
+/* Tablets (max-width: 1200px) */
 @media (max-width: 1200px) {
   .hover-card {
     width: 45%;
   }
+
+  .featured-title {
+    font-size: 2.5rem;
+  }
+
+  .featured-subtitle {
+    font-size: 20px;
+  }
 }
 
-/* Responsive: Mobile */
-@media (max-width: 600px) {
+/* Mobile L (max-width: 768px) */
+@media (max-width: 768px) {
   .hover-card {
-    width: 100%;
+    width: 90%;
+    height: auto;
+  }
+
+  .hover-card img {
+    height: 250px;
+  }
+
+  .hover-content {
+    position: relative;
+    bottom: 0;
+    background: #fff;
+    padding: 15px;
+  }
+
+  .hover-card:hover .hover-content {
+    bottom: 0;
+  }
+}
+
+/* Mobile S & M (max-width: 480px) */
+@media (max-width: 480px) {
+  .featured-title {
+    font-size: 1.8rem;
+  }
+
+  .featured-subtitle {
+    font-size: 16px;
+  }
+
+  .hover-content h3 {
+    font-size: 18px;
+  }
+
+  .hover-content p {
+    font-size: 14px;
+  }
+
+  .hover-content button {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  .product-btn {
+    font-size: 16px;
+    padding: 10px 16px;
   }
 }
 
@@ -427,9 +482,74 @@ body {
   font-size: 18px;
 }
 
+/* ✅ Responsive Breakpoints */
+
+@media (max-width: 1024px) {
+  .why-choose h2 {
+    font-size: 2.5rem;
+  }
+
+  .subtext {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-choose h2 {
+    font-size: 2.2rem;
+  }
+
+  .subtext {
+    font-size: 17px;
+  }
+
+  .card {
+    max-width: 100%;
+    padding: 25px 15px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-choose {
+    padding: 40px 10px;
+  }
+
+  .why-choose h2 {
+    font-size: 1.8rem;
+  }
+
+  .subtext {
+    font-size: 16px;
+  }
+
+  .card-wrapper {
+    gap: 15px;
+  }
+
+  .card {
+    padding: 20px 12px;
+  }
+
+  .card h3 {
+    font-size: 17px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+}
 
 
 /* Contact Section */
+
 * {
   margin: 0;
   padding: 0;
@@ -510,4 +630,61 @@ body {
   height: 300px;
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ RESPONSIVE BREAKPOINTS */
+
+@media (max-width: 1024px) {
+  .sustainable-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .left-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .left-content p {
+    font-size: 18px;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .left-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .left-content p {
+    font-size: 16px;
+  }
+
+  .secondary-btn {
+    font-size: 18px;
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .left-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .left-content p {
+    font-size: 15px;
+  }
+
+  .secondary-btn {
+    font-size: 16px;
+    padding: 10px 18px;
+  }
+
+  .sustainable-section {
+    padding: 30px 15px;
+    gap: 20px;
+  }
 }

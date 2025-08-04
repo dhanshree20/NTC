@@ -1,7 +1,7 @@
  const products = {
       massage: [
         {
-          image: "images/All_Services_Images/Mechanical_Engineering_Industrial_Flooring.webp",
+          image: "images/All_Services_Images/Mechanical_Engineering_Industrial_Flooring_1.jpg",
           subtitle: "Industrial(PU/Epoxy) Flooring",
           title: "Mechanical/Engineering Industrial Flooring",
           link: "Mechanical_Engineering_Industrial_Flooring.html"
@@ -25,13 +25,13 @@
           link: "Anti_Static.html"
         },
         {
-          image: "images/All_Services_Images/Anti_Skid.webp",
+          image: "images/All_Services_Images/Anti_Skid_1.jpg",
           subtitle: "Industrial(PU/Epoxy) Flooring",
           title: "Anti-Skid Flooring",
           link: "Anti_Skid.html"
         },
         {
-          image: "images/All_Services_Images/Car_Parking_Anti-Skid.webp",
+          image: "images/All_Services_Images/Car_Parking_Anti-Skid_1.jpg",
           subtitle: "Industrial(PU/Epoxy) Flooring",
           title: "Car Parking Anti-Skid Flooring",
           link: "Car_Parking_Anti-Skid.html"
